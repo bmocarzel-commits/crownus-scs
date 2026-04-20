@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência Confirmada — Crown'us Professional</title>
+    <meta name="description" content="Sua Experiência Crown'us Hair Booster foi confirmada. Veja os próximos passos.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --red:#C41E2F;--red-dark:#9A1824;
+            --black:#0A0A0A;--black-soft:#1A1A1A;--white:#FFFFFF;
+            --gray-100:#F5F5F5;--gray-200:#EBEBEB;
+            --text:#1A1A1A;--text-light:#777;
+            --green:#2D8F4E;--green-light:#E8F5E9;
+        }
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6}
+
+        .page{
+            min-height:100vh;display:flex;flex-direction:column;
+            justify-content:center;align-items:center;text-align:center;
+            padding:40px 20px;
+        }
+        .card{
+            max-width:580px;width:100%;background:var(--white);
+            border:1px solid var(--gray-200);padding:50px 40px;
+        }
+
+        /* Confirmacao */
+        .check-icon{
+            width:72px;height:72px;border-radius:50%;background:var(--green-light);
+            display:flex;align-items:center;justify-content:center;
+            margin:0 auto 24px;
+        }
+        .check-icon svg{width:36px;height:36px;fill:var(--green)}
+
+        .card h1{
+            font-family:'Cormorant Garamond',serif;font-size:2rem;
+            font-weight:400;margin-bottom:8px;color:var(--black);
+        }
+        .card h1 span{color:var(--red);font-weight:600}
+        .card .subtitle{
+            color:var(--text-light);font-size:.92rem;font-weight:300;
+            margin-bottom:36px;line-height:1.7;
+        }
+
+        /* Steps */
+        .steps{text-align:left;margin-bottom:36px}
+        .step{
+            display:flex;gap:16px;padding:18px 0;
+            border-bottom:1px solid var(--gray-100);
+        }
+        .step:last-child{border-bottom:none}
+        .step-num{
+            min-width:36px;height:36px;border-radius:50%;
+            background:var(--gray-100);display:flex;align-items:center;
+            justify-content:center;font-family:'Cormorant Garamond',serif;
+            font-size:1.1rem;font-weight:600;color:var(--red);
+        }
+        .step-content h3{font-size:.88rem;font-weight:600;margin-bottom:4px;color:var(--black)}
+        .step-content p{font-size:.84rem;color:var(--text-light);font-weight:300;line-height:1.6}
+
+        /* CTA WhatsApp */
+        .wpp-cta{
+            display:flex;align-items:center;justify-content:center;gap:10px;
+            width:100%;padding:16px 24px;background:#25D366;color:var(--white);
+            font-size:.82rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+            text-decoration:none;transition:all .3s;border:none;cursor:pointer;
+            margin-bottom:12px;
+        }
+        .wpp-cta:hover{background:#1DA851;transform:translateY(-1px)}
+        .wpp-cta svg{width:22px;height:22px;fill:white}
+
+        .security-note{
+            display:flex;align-items:center;gap:8px;justify-content:center;
+            color:var(--text-light);font-size:.72rem;margin-top:16px;
+        }
+        .security-note svg{width:14px;height:14px;fill:var(--green)}
+
+        /* Info box */
+        .info-box{
+            background:var(--gray-100);padding:20px;margin-top:24px;
+            text-align:left;
+        }
+        .info-box h4{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px}
+        .info-box p{font-size:.82rem;color:var(--text-light);font-weight:300;line-height:1.7}
+
+        /* Bottom links */
+        .bottom-links{
+            margin-top:30px;display:flex;flex-direction:column;
+            gap:10px;align-items:center;
+        }
+        .bottom-links a{
+            font-size:.75rem;color:var(--text-light);text-decoration:none;
+            letter-spacing:1px;transition:color .3s;
+        }
+        .bottom-links a:hover{color:var(--red)}
+
+        /* Brand */
+        .brand{
+            margin-top:40px;font-family:'Cormorant Garamond',serif;
+            font-size:1.1rem;color:var(--black);letter-spacing:1px;
+        }
+        .brand span{color:var(--red)}
+        .brand-sub{font-size:.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--text-light);margin-top:4px}
+
+        @media(max-width:600px){
+            .card{padding:36px 24px}
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+        <!-- Check icon -->
+        <div class="check-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+
+        <h1>Experiência <span>confirmada!</span></h1>
+        <p class="subtitle">Seu pagamento foi recebido. Agora vamos agendar sua experiência Hair Booster em um salão parceiro Crown'us em São Caetano do Sul.</p>
+
+        <!-- Proximos passos -->
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Fale com a gente no WhatsApp</h3>
+                    <p>Clique no botão abaixo e envie a mensagem automática. Isso confirma seu agendamento.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>Escolha o salão e a data</h3>
+                    <p>Vamos te apresentar os salões parceiros disponíveis na sua região e você escolhe o melhor dia.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Viva a experiência</h3>
+                    <p>Vá ao salão no dia agendado. O profissional aplica o Hair Booster no lavatório e você sai com o produto pra casa — mais de 40 aplicações.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/5511982365924?text=Olá Bruna! Acabei de garantir minha Experiência Crown'us Hair Booster. Quero agendar no salão mais próximo em São Caetano! 💆‍♀️" class="wpp-cta" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agendar pelo WhatsApp
+        </a>
+
+        <div class="security-note">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            Respondemos em até 30 minutos durante o horário comercial
+        </div>
+
+        <!-- Info extra -->
+        <div class="info-box">
+            <h4>O que levar no dia</h4>
+            <p>Só você! O produto já estará no salão esperando. Se tiver preferência por um tipo de cabelo (liso, cacheado, com química), mencione no WhatsApp pra prepararmos a experiência ideal.</p>
+        </div>
+
+        <div class="info-box" style="margin-top:12px">
+            <h4>Política de reagendamento</h4>
+            <p>Precisa mudar a data? Sem problema. Avise pelo WhatsApp com pelo menos 24h de antecedência e reagendamos sem custo.</p>
+        </div>
+
+        <!-- Bottom links -->
+        <div class="bottom-links">
+            <a href="index.html">← Voltar para a página principal</a>
+            <a href="https://instagram.com/crownus.scs" target="_blank">Siga @crownus.scs no Instagram</a>
+        </div>
+    </div>
+
+    <!-- Brand -->
+    <div class="brand">crown'<span>us</span> professional</div>
+    <div class="brand-sub">Pré-lançamento São Caetano do Sul · Fitra Dottore</div>
+</div>
+
+</body>
+</html>

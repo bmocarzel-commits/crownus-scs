@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crown'us Professional — Seja um Salão Parceiro</title>
+  <meta name="description" content="Leve a Crown'us Hair Booster para o seu salão. Conheça o programa de parceria, consultoria e revenda exclusiva para profissionais do cabelo em São Paulo." />
+  <meta name="keywords" content="Crown'us, salão parceiro, consultoria capilar, revenda profissional, Hair Booster, São Caetano do Sul" />
+  <meta property="og:title" content="Crown'us Professional — Para Salões" />
+  <meta property="og:description" content="Seu salão pode fazer parte de um projeto Crown'us. Saiba como." />
+  <meta property="og:image" content="https://crownus-scs.netlify.app/hairbooster.png" />
+  <meta property="og:url" content="https://crownus-scs.netlify.app/profissionais.html" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://crownus-scs.netlify.app/profissionais.html" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red: #C41E2F;
+      --red-dark: #a31827;
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --gray-light: #F8F7F5;
+      --gray-mid: #E8E6E2;
+      --gray-text: #6B6560;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--black);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-left { display: flex; align-items: center; gap: 28px; }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem; font-weight: 600;
+      color: var(--white); letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--red); }
+    .nav-back {
+      font-family: var(--font-sans); font-size: 0.78rem;
+      color: rgba(255,255,255,0.5); text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--red); color: var(--white);
+      font-family: var(--font-sans); font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none; padding: 10px 22px; border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--red-dark); }
+    @media (max-width: 480px) {
+      nav { padding: 14px 20px; }
+      .nav-logo { font-size: 1.2rem; }
+      .nav-back { display: none; }
+      .nav-cta { padding: 9px 14px; font-size: 0.72rem; }
+    }
+
+    /* HERO */
+    .hero {
+      position: relative; min-height: 92vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      background: var(--black); overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0e 50%, #0a0a0a 100%);
+    }
+    .hero-pattern {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        45deg, var(--red) 0px, var(--red) 1px, transparent 1px, transparent 60px
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 760px; padding: 0 40px 80px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(196,30,47,0.15);
+      border: 1px solid rgba(196,30,47,0.35);
+      border-radius: 24px; padding: 7px 16px;
+      font-family: var(--font-sans); font-size: 0.7rem;
+      font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 28px;
+    }
+    .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 400; line-height: 1.1; color: var(--white);
+      margin-bottom: 24px;
+    }
+    .hero-title em { font-style: italic; color: rgba(255,255,255,0.75); }
+    .hero-subtitle {
+      font-family: var(--font-sans); font-size: 1rem;
+      font-weight: 300; line-height: 1.7;
+      color: rgba(255,255,255,0.65); max-width: 560px; margin-bottom: 40px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--red); color: var(--white);
+      font-family: var(--font-sans); font-size: 0.82rem;
+      font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; padding: 16px 34px; border-radius: 2px;
+      border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: rgba(255,255,255,0.7);
+      font-family: var(--font-sans); font-size: 0.82rem;
+      font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; padding: 16px 28px; border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.2); cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+    @media (max-width: 600px) {
+      .hero-content { padding: 0 24px 64px; }
+    }
+
+    /* SECTIONS */
+    section { padding: 80px 40px; }
+    .container { max-width: 1040px; margin: 0 auto; }
+    .section-label {
+      font-family: var(--font-sans); font-size: 0.7rem; font-weight: 500;
+      letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 400; line-height: 1.2; margin-bottom: 16px;
+    }
+    .section-desc {
+      font-family: var(--font-sans); font-size: 0.95rem;
+      font-weight: 300; line-height: 1.7; color: var(--gray-text);
+    }
+    .divider { width: 48px; height: 2px; background: var(--red); margin: 20px 0 28px; }
+    @media (max-width: 600px) { section { padding: 60px 24px; } }
+
+    /* OVERVIEW */
+    .overview { background: var(--gray-light); }
+    .overview-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+    }
+    .overview-item { margin-bottom: 32px; }
+    .overview-item:last-child { margin-bottom: 0; }
+    .overview-num {
+      font-family: var(--font-serif); font-size: 1rem; font-weight: 400;
+      color: var(--red); margin-bottom: 6px;
+    }
+    .overview-item-title {
+      font-family: var(--font-serif); font-size: 1.3rem;
+      font-weight: 500; margin-bottom: 8px;
+    }
+    .overview-item-desc {
+      font-size: 0.87rem; font-weight: 300; line-height: 1.65; color: var(--gray-text);
+    }
+    @media (max-width: 768px) { .overview-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* BENEFÍCIOS */
+    .beneficios { background: var(--white); }
+    .beneficios-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+      margin-top: 52px;
+    }
+    .beneficio-card {
+      background: var(--gray-light);
+      border: 1px solid var(--gray-mid);
+      border-radius: 4px; padding: 32px 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .beneficio-card:hover { border-color: var(--red); transform: translateY(-3px); }
+    .beneficio-icon {
+      width: 40px; height: 40px;
+      background: rgba(196,30,47,0.1);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+      color: var(--red);
+    }
+    .beneficio-title {
+      font-family: var(--font-serif); font-size: 1.2rem;
+      font-weight: 500; margin-bottom: 10px;
+    }
+    .beneficio-desc {
+      font-size: 0.84rem; font-weight: 300; line-height: 1.65; color: var(--gray-text);
+    }
+    @media (max-width: 900px) { .beneficios-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .beneficios-grid { grid-template-columns: 1fr; } }
+
+    /* DEPOIMENTO */
+    .depoimento {
+      background: var(--black); color: var(--white);
+      text-align: center; padding: 80px 40px;
+    }
+    .depoimento-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 300; font-style: italic;
+      line-height: 1.4; color: var(--white);
+      max-width: 680px; margin: 0 auto 28px;
+    }
+    .depoimento-quote::before { content: '\201C'; color: var(--red); font-size: 3rem; line-height: 0; vertical-align: -0.5rem; margin-right: 4px; }
+    .depoimento-author {
+      font-family: var(--font-sans); font-size: 0.8rem;
+      color: rgba(255,255,255,0.4); letter-spacing: 0.1em; text-transform: uppercase;
+    }
+
+    /* COMO FUNCIONA SALÃO */
+    .como-salao { background: var(--gray-light); }
+    .como-steps {
+      display: flex; flex-direction: column; gap: 0;
+      margin-top: 48px; border: 1px solid var(--gray-mid);
+      border-radius: 6px; overflow: hidden;
+    }
+    .como-step {
+      display: grid; grid-template-columns: 80px 1fr;
+      border-bottom: 1px solid var(--gray-mid);
+      transition: background 0.2s;
+    }
+    .como-step:last-child { border-bottom: none; }
+    .como-step:hover { background: rgba(196,30,47,0.03); }
+    .como-step-n {
+      background: var(--black); color: var(--red);
+      font-family: var(--font-serif); font-size: 1.6rem;
+      display: flex; align-items: center; justify-content: center;
+      padding: 28px;
+    }
+    .como-step-body { padding: 28px 32px; }
+    .como-step-title {
+      font-family: var(--font-serif); font-size: 1.15rem;
+      font-weight: 500; margin-bottom: 6px;
+    }
+    .como-step-desc {
+      font-size: 0.85rem; font-weight: 300; line-height: 1.6; color: var(--gray-text);
+    }
+    @media (max-width: 500px) {
+      .como-step { grid-template-columns: 56px 1fr; }
+      .como-step-n { font-size: 1.2rem; padding: 20px; }
+      .como-step-body { padding: 20px; }
+    }
+
+    /* FAQ */
+    .faq { background: var(--white); }
+    .faq-list { margin-top: 48px; }
+    .faq-item { border-bottom: 1px solid var(--gray-mid); }
+    .faq-question {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0;
+      font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500;
+      color: var(--black); transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--red); }
+    .faq-icon {
+      width: 24px; height: 24px;
+      border: 1px solid currentColor; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-left: 16px;
+      transition: transform 0.3s, background 0.2s;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: var(--red); border-color: var(--red); color: var(--white);
+    }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.2s;
+      font-size: 0.9rem; font-weight: 300; line-height: 1.75; color: var(--gray-text);
+    }
+    .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 22px; }
+
+    /* FORM */
+    .form-section { background: var(--black); }
+    .form-section .section-title { color: var(--white); }
+    .form-section .section-desc { color: rgba(255,255,255,0.5); max-width: 560px; }
+    .form-inner { margin-top: 44px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-grid .full { grid-column: 1 / -1; }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    .field label {
+      font-family: var(--font-sans); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+    .field input, .field select, .field textarea {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 3px; padding: 12px 14px;
+      font-family: var(--font-sans); font-size: 0.9rem; color: var(--white);
+      transition: border-color 0.2s, background 0.2s; outline: none;
+      -webkit-appearance: none;
+    }
+    .field input::placeholder, .field textarea::placeholder { color: rgba(255,255,255,0.25); }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: rgba(196,30,47,0.7);
+      background: rgba(255,255,255,0.09);
+    }
+    .field select option { background: #1a1a1a; color: var(--white); }
+    .field textarea { resize: vertical; min-height: 90px; }
+    .form-actions { margin-top: 28px; }
+    .form-notice {
+      font-size: 0.75rem; color: rgba(255,255,255,0.3);
+      margin-top: 12px; line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-grid .full { grid-column: 1; }
+    }
+
+    /* FOOTER */
+    footer {
+      background: #050505; padding: 48px 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-inner {
+      max-width: 1040px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 32px;
+    }
+    .footer-logo {
+      font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600;
+      color: var(--white); letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--red); }
+    .footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-top: 8px; line-height: 1.5; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-link {
+      font-size: 0.82rem; color: rgba(255,255,255,0.45);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-link:hover { color: var(--white); }
+    .footer-bottom {
+      max-width: 1040px; margin: 32px auto 0; padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.2); }
+    .footer-hub { font-size: 0.72rem; color: rgba(255,255,255,0.2); }
+    .footer-hub a { color: rgba(255,255,255,0.35); text-decoration: none; }
+    @media (max-width: 600px) { footer { padding: 40px 24px; } }
+
+    /* WA */
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      width: 58px; height: 58px; background: #25D366;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+  </style>
+</head>
+
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Crown<span>'</span>us</a>
+    <a href="/" class="nav-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Voltar ao site
+    </a>
+  </div>
+  <a href="#contato" class="nav-cta">Quero ser parceiro</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Para profissionais e salões
+    </div>
+    <h1 class="hero-title">Seu salão pode fazer parte<br /><em>de um projeto Crown'us.</em></h1>
+    <p class="hero-subtitle">Levamos a experiência Hair Booster para dentro do seu espaço. Você fideliza clientes, agrega valor ao serviço e entra em um projeto premium que já movimentou salões em toda a Grande São Paulo.</p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn-primary">
+        Quero ser salão parceiro
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#como-funciona" class="btn-ghost">Como funciona</a>
+    </div>
+  </div>
+</section>
+
+<!-- Overview do Projeto -->
+<section class="overview" id="sobre">
+  <div class="container">
+    <div class="overview-grid">
+      <div>
+        <p class="section-label">O projeto</p>
+        <h2 class="section-title">Crown'us Professional<br />chega ao seu salão</h2>
+        <div class="divider"></div>
+        <p class="section-desc">O programa Crown'us para salões parceiros une experiência de marca, produto premium e geração de renda para profissionais. Funciona como um evento dentro do seu espaço ou como uma parceria contínua de revenda — você escolhe o modelo que faz mais sentido para o seu negócio.</p>
+        <p class="section-desc" style="margin-top:14px;">Já estivemos em salões como Pelle Capelli, Casa Florah e Rom Concept, além de eventos em Taboão da Serra e Shopping Iguatemi. Cada parceria é construída com atenção, treinamento e suporte real.</p>
+      </div>
+      <div>
+        <div class="overview-item">
+          <div class="overview-num">Modelo 01</div>
+          <h3 class="overview-item-title">Evento no seu salão</h3>
+          <p class="overview-item-desc">Organizamos um dia de experiência Crown'us no seu espaço. Você recebe a movimentação, a Crown'us fornece o produto e a expertise. Suas clientes saem com resultado e kit em mãos.</p>
+        </div>
+        <div class="overview-item">
+          <div class="overview-num">Modelo 02</div>
+          <h3 class="overview-item-title">Consultoria + revenda</h3>
+          <p class="overview-item-desc">Você se torna ponto de revenda da linha Crown'us na sua cidade. Recebe treinamento, material de apoio e suporte para oferecer os produtos como serviço ou venda direta aos seus clientes.</p>
+        </div>
+        <div class="overview-item">
+          <div class="overview-num">Modelo 03</div>
+          <h3 class="overview-item-title">Parceria completa</h3>
+          <p class="overview-item-desc">Combina eventos periódicos com revenda contínua. Ideal para salões que querem estabelecer a Crown'us como parte da identidade do espaço e oferecer sempre algo exclusivo para suas clientes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefícios -->
+<section class="beneficios">
+  <div class="container">
+    <p class="section-label">Por que ser parceiro</p>
+    <h2 class="section-title">O que seu salão ganha<br />com a Crown'us</h2>
+    <div class="beneficios-grid">
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 class="beneficio-title">Diferenciação de mercado</h3>
+        <p class="beneficio-desc">Ofereça algo que os outros salões da região ainda não têm. A linha Crown'us é exclusiva e reconhecida — um diferencial real para atrair e fidelizar clientes.</p>
+      </div>
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 class="beneficio-title">Treinamento incluído</h3>
+        <p class="beneficio-desc">Todos os salões parceiros recebem capacitação sobre a linha — técnica de aplicação, benefícios dos produtos e como apresentar a experiência para as clientes.</p>
+      </div>
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3 class="beneficio-title">Fidelização de clientes</h3>
+        <p class="beneficio-desc">A experiência Crown'us cria vínculo. Clientes que saem com kit em mãos voltam ao salão para repetição do tratamento e têm muito mais chance de indicar para amigas.</p>
+      </div>
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="beneficio-title">Nova fonte de renda</h3>
+        <p class="beneficio-desc">Além do serviço, você agrega uma linha de revenda. O kit de manutenção que o cliente leva para casa representa receita adicional sem aumentar o custo operacional do salão.</p>
+      </div>
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="beneficio-title">Suporte contínuo</h3>
+        <p class="beneficio-desc">Você não fica sozinha. Suporte direto via WhatsApp para dúvidas técnicas, reposição de estoque, novidades da linha e estratégias para maximizar os resultados no seu salão.</p>
+      </div>
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <h3 class="beneficio-title">Material de divulgação</h3>
+        <p class="beneficio-desc">Disponibilizamos material visual para redes sociais e comunicação com clientes. Seu salão se promove com a credibilidade da marca Crown'us Professional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimento -->
+<section class="depoimento">
+  <div class="container">
+    <blockquote class="depoimento-quote">Sedi o evento Crown'us e em um único dia tive mais movimento, mais engajamento e saí com clientes novas que voltaram para serviços completos.</blockquote>
+    <p class="depoimento-author">— Salão parceiro Crown'us, Grande São Paulo</p>
+  </div>
+</section>
+
+<!-- Como Funciona -->
+<section class="como-salao" id="como-funciona">
+  <div class="container">
+    <p class="section-label">O processo</p>
+    <h2 class="section-title">Do contato ao evento:<br />passo a passo simples</h2>
+    <div class="divider"></div>
+    <div class="como-steps">
+      <div class="como-step">
+        <div class="como-step-n">01</div>
+        <div class="como-step-body">
+          <h3 class="como-step-title">Você preenche o formulário</h3>
+          <p class="como-step-desc">Envie seus dados pelo formulário abaixo. Em até 24h úteis, a Bruna entra em contato pelo WhatsApp para entender o perfil do seu salão e qual modelo de parceria faz mais sentido.</p>
+        </div>
+      </div>
+      <div class="como-step">
+        <div class="como-step-n">02</div>
+        <div class="como-step-body">
+          <h3 class="como-step-title">Conversa e alinhamento</h3>
+          <p class="como-step-desc">Uma conversa rápida para entender o tamanho do salão, perfil de clientela, localização e expectativas. A partir daí, a gente monta a proposta ideal — evento, consultoria, revenda ou tudo junto.</p>
+        </div>
+      </div>
+      <div class="como-step">
+        <div class="como-step-n">03</div>
+        <div class="como-step-body">
+          <h3 class="como-step-title">Treinamento e preparação</h3>
+          <p class="como-step-desc">Antes do primeiro evento ou da primeira venda, você recebe o treinamento completo sobre a linha — produto, técnica de aplicação, protocolos e comunicação com o cliente.</p>
+        </div>
+      </div>
+      <div class="como-step">
+        <div class="como-step-n">04</div>
+        <div class="como-step-body">
+          <h3 class="como-step-title">Seu salão em ação</h3>
+          <p class="como-step-desc">Com a estrutura pronta, o evento acontece. A Crown'us fornece os produtos; você fornece o espaço e o atendimento. Simples, organizado e com resultado claro para as duas partes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Salão -->
+<section class="faq" id="faq">
+  <div class="container">
+    <p class="section-label">Dúvidas frequentes</p>
+    <h2 class="section-title">Perguntas de quem está<br />pensando em ser parceiro</h2>
+    <div class="divider"></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Qual o tamanho mínimo de salão para ser parceiro?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Não existe tamanho mínimo. Trabalhamos com salões de 2 cadeiras até espaços maiores. O que importa é o perfil da clientela e o interesse em oferecer uma experiência premium. Adaptamos o modelo de parceria para cada realidade.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Preciso ter experiência com a linha Crown'us antes?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Não. Todos os novos parceiros recebem treinamento completo antes de começar. Você aprende sobre o produto, a técnica de aplicação e como apresentar a experiência para as suas clientes. O suporte continua depois também.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Quanto custa para sediar um evento Crown'us?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">O modelo de parceria é personalizado — os valores e condições são discutidos durante a conversa de alinhamento. O que posso adiantar é que o salão parceiro tem retorno financeiro real no dia do evento, além de benefícios na fidelização de clientes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          O salão precisa ter algum certificado ou habilitação especial?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Para sediar o evento, o salão precisa ter estrutura básica para atendimento — lavatórios, pontos de energia, ambiente adequado. Para revenda, as exigências são mínimas. Tudo é avaliado durante o contato inicial.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Posso fazer só a revenda sem realizar o evento?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Sim. Os modelos são independentes. Você pode se tornar revendedor da linha Crown'us sem necessariamente realizar um evento no seu salão. Conversamos sobre o modelo que melhor se encaixa na sua rotina e estrutura.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Com que frequência acontecem os eventos nos salões parceiros?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">A frequência é combinada com cada parceiro. Pode ser um evento único, trimestral, mensal — depende da demanda e da capacidade do salão. Muitos parceiros começam com um evento e depois pedem para repetir pela resposta positiva das clientes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          A Crown'us está disponível para revendedores fora de São Caetano do Sul?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Sim. Atendemos salões e profissionais em toda a Grande São Paulo e região. Para cidades mais distantes, avaliamos a viabilidade logística durante o contato inicial. Entre em contato e descobrimos juntos se conseguimos atender sua cidade.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Como é o suporte depois que eu me tornar parceiro?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Suporte via WhatsApp para dúvidas técnicas, reposição de estoque, orientações de uso e novidades da linha. Você nunca fica sem resposta — o atendimento é direto com a Bruna, que conhece cada parceiro pessoalmente.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Como faço para começar?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-answer">Preencha o formulário abaixo com os dados do seu salão. A Bruna entra em contato pelo WhatsApp em até 24h úteis para uma conversa sem compromisso. Sem burocracia, sem contratos complicados no primeiro contato.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formulário de Contato -->
+<section class="form-section" id="contato">
+  <div class="container">
+    <p class="section-label">Quero ser parceiro</p>
+    <h2 class="section-title">Fale com a gente sobre<br />o seu salão</h2>
+    <p class="section-desc">Preencha o formulário abaixo. Retornaremos pelo WhatsApp em até 24h úteis com uma proposta personalizada para o seu espaço.</p>
+    <div class="form-inner">
+      <form id="form-salao" onsubmit="submitSalao(event)">
+        <div class="form-grid">
+          <div class="field">
+            <label for="s-nome-salao">Nome do salão *</label>
+            <input type="text" id="s-nome-salao" name="nome_salao" placeholder="Nome do seu estabelecimento" required />
+          </div>
+          <div class="field">
+            <label for="s-responsavel">Seu nome (responsável) *</label>
+            <input type="text" id="s-responsavel" name="responsavel" placeholder="Nome do proprietário" required />
+          </div>
+          <div class="field">
+            <label for="s-cadeiras">Número de cadeiras</label>
+            <input type="number" id="s-cadeiras" name="cadeiras" placeholder="Ex: 5" min="1" />
+          </div>
+          <div class="field">
+            <label for="s-email">E-mail profissional</label>
+            <input type="email" id="s-email" name="email" placeholder="contato@seusalao.com" />
+          </div>
+          <div class="field">
+            <label for="s-cidade">Cidade *</label>
+            <input type="text" id="s-cidade" name="cidade" placeholder="Sua cidade" required />
+          </div>
+          <div class="field">
+            <label for="s-estado">Estado *</label>
+            <select id="s-estado" name="estado" required>
+              <option value="" disabled selected>Selecione</option>
+              <option>SP</option><option>RJ</option><option>MG</option><option>PR</option>
+              <option>SC</option><option>RS</option><option>BA</option><option>GO</option>
+              <option>DF</option><option>PE</option><option>CE</option><option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="s-whatsapp">WhatsApp *</label>
+            <input type="tel" id="s-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
+          </div>
+          <div class="field">
+            <label for="s-interesse">Interesse principal *</label>
+            <select id="s-interesse" name="interesse" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="evento">Sediar evento Crown'us</option>
+              <option value="consultoria">Consultoria de produtos</option>
+              <option value="revenda">Revenda da linha Crown'us</option>
+              <option value="tudo">Evento + consultoria/revenda</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="s-mensagem">Mensagem (opcional)</label>
+            <textarea id="s-mensagem" name="mensagem" placeholder="Conte um pouco sobre o seu salão e o que espera da parceria..."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Enviar e falar no WhatsApp
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="form-notice">Ao enviar, você será redirecionada para o WhatsApp para continuar a conversa. Retorno em até 24h úteis. Sem spam, sem venda agressiva.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="/" class="footer-logo">Crown<span>'</span>us</a>
+      <p class="footer-tagline">Para profissionais e salões parceiros.<br />São Caetano do Sul e Grande São Paulo.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/" class="footer-link">Para clientes finais</a>
+      <a href="#sobre" class="footer-link">Sobre o projeto</a>
+      <a href="#faq" class="footer-link">Dúvidas frequentes</a>
+      <a href="https://wa.me/5511982365924" target="_blank" class="footer-link">WhatsApp direto</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Crown'us Professional — São Caetano do Sul. Todos os direitos reservados.</p>
+    <p class="footer-hub">Projeto <a href="#" target="_blank">Fitra Hub</a></p>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5511982365924?text=Olá! Vi o site Crown'us para profissionais e quero saber mais sobre ser salão parceiro." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.504 3.93 1.384 5.6L0 24l6.584-1.724A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.792 9.792 0 0 1-5.031-1.388l-.36-.214-3.737.979 1-3.647-.235-.375A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+</a>
+
+<script>
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxD1MotMdWwuenEbA5yUoFnIxGtgupeHTOJOYWYjudmmGKpqbHTfH8Qr3xwZi8zKp_U/exec';
+  const WA_NUM = '5511982365924';
+
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  async function submitSalao(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type=submit]');
+    const orig = btn.textContent;
+    btn.textContent = 'Enviando...'; btn.disabled = true;
+
+    const data = new FormData(e.target);
+    const obj = Object.fromEntries(data.entries());
+    obj.tipo = 'salao_profissionais';
+
+    try {
+      await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify(obj) });
+    } catch(_) {}
+
+    const nomeSalao = obj.nome_salao || '';
+    const resp = obj.responsavel || '';
+    const msg = encodeURIComponent('Olá! Sou ' + resp + ' do salão ' + nomeSalao + ' e quero saber mais sobre consultoria e revenda de produtos Crown\'us.');
+    window.open('https://wa.me/' + WA_NUM + '?text=' + msg, '_blank');
+    btn.textContent = orig; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

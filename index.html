@@ -690,25 +690,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video id="hero-video" loop playsinline class="hero-img" style="object-fit:cover;">
-    <source src="/hairbooster.mp4" type="video/mp4" />
-  </video>
-  <div class="hero-overlay"></div>
-  <button id="hero-play-btn" onclick="startHeroVideo()" aria-label="Reproduzir vídeo com som" style="
-    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-    z-index:3; display:flex; flex-direction:column; align-items:center; gap:12px;
-    background:none; border:none; cursor:pointer; transition:opacity 0.3s;
-  ">
-    <div style="
-      width:72px; height:72px; background:rgba(196,168,112,0.85); border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      backdrop-filter:blur(4px); border:2px solid rgba(255,255,255,0.2);
-      transition:transform 0.2s, background 0.2s;
-    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-      <svg width="22" height="26" viewBox="0 0 18 20" fill="white"><path d="M1 1l16 9L1 19V1z"/></svg>
-    </div>
-    <span style="font-family:'Jura',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(246,242,234,0.75);">Assistir com som</span>
-  </button>
+  <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.85) 100%);"></div>
   <div class="hero-content">
 
     <div class="hero-kicker">
@@ -729,7 +711,7 @@
     </div>
 
     <p class="hero-sub">
-      A <span class="crownus-red"><span class="crownus-red">Crown'us</span> Hair Booster</span> é aplicada no salão por profissional — e você leva o frasco pra casa com <strong>cerca de 30 aplicações</strong>. É mais barato que uma hidratação avulsa, e o produto vai com você.
+      A <span class="crownus-red">Crown'us Hair Booster</span> é aplicada no salão por profissional — e você leva o frasco pra casa com <strong>cerca de 30 aplicações</strong>. É mais barato que uma hidratação avulsa, e o produto vai com você.
     </p>
 
     <div class="hero-btns">
@@ -911,18 +893,18 @@
     <h2 class="section-title">Quem já viveu a experiência</h2>
     <div class="reels-grid">
       <div class="reel-card" id="reel1" onclick="playReel('reel1','rvid1')">
-        <img src="/reel1.jpg" alt="Resultado Crown'us" />
-        <video id="rvid1" loading="lazy" src="/reel1.mp4" loop playsinline></video>
+        <img src="/reel-laura.jpeg" alt="Resultado Crown'us" />
+        <video id="rvid1" loading="lazy" src="/reel-laura.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
       <div class="reel-card" id="reel2" onclick="playReel('reel2','rvid2')">
-        <img src="/reel2.jpg" alt="Resultado Crown'us" />
-        <video id="rvid2" loading="lazy" src="/reel2.mp4" loop playsinline></video>
+        <img src="/experiencianosalao.jpeg" alt="Resultado Crown'us" />
+        <video id="rvid2" loading="lazy" src="/experiencianosalao.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
       <div class="reel-card" id="reel3" onclick="playReel('reel3','rvid3')">
-        <img src="/reel3.jpg" alt="Resultado Crown'us" />
-        <video id="rvid3" loading="lazy" src="/reel3.mp4" loop playsinline></video>
+        <img src="/reel-finalizar.jpeg" alt="Resultado Crown'us" />
+        <video id="rvid3" loading="lazy" src="/reel-finalizar.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
     </div>
@@ -969,7 +951,7 @@
   <div class="container">
     <div class="sobre-inner">
       <div>
-        <img src="/Bruna.PNG" alt="Bruna Mocarzel — Fitra Hub Salões" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;" />
+        <img src="/hairbooster-mosaic.jpeg" alt="Bruna Mocarzel — Fitra Hub Salões" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;" />
       </div>
       <div class="sobre-content">
         <p class="section-label">Quem está por trás da Fitra Hub</p>
@@ -1199,34 +1181,6 @@
       });
       card.classList.add('playing'); vid.play();
     }
-  }
-
-  /* HERO VIDEO */
-  (function() {
-    const video = document.getElementById('hero-video');
-    const btn = document.getElementById('hero-play-btn');
-    const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) || window.innerWidth < 768;
-    if (isMobile) {
-      video.muted = true; video.autoplay = true;
-      video.play().catch(() => {});
-      if (btn) btn.style.display = 'none';
-    } else {
-      video.muted = true; video.play().catch(() => {});
-      video.pause(); video.currentTime = 0;
-      if (btn) btn.style.display = 'flex';
-    }
-  })();
-
-  function startHeroVideo() {
-    const video = document.getElementById('hero-video');
-    const btn = document.getElementById('hero-play-btn');
-    video.muted = false; video.currentTime = 0;
-    video.play().then(() => {
-      if (btn) { btn.style.opacity = '0'; btn.style.pointerEvents = 'none'; }
-    }).catch(() => {
-      video.muted = true; video.play();
-      if (btn) { btn.style.opacity = '0'; btn.style.pointerEvents = 'none'; }
-    });
   }
 
   /* FORM CLIENTE */

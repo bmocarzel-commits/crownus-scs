@@ -405,9 +405,9 @@
       gap: 16px; margin-top: 48px;
     }
     .reel-card { position: relative; overflow: hidden; aspect-ratio: 9/16; cursor: pointer; background: var(--ink); }
-    .reel-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.3s; }
+    .reel-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform 0.3s; }
     .reel-card:hover img { transform: scale(1.04); }
-    .reel-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: none; }
+    .reel-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; display: none; }
     .reel-card.playing video { display: block; }
     .reel-card.playing img { display: none; }
     .reel-overlay {

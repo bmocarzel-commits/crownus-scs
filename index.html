@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://crownus-scs.netlify.app/" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://crownus-scs.netlify.app/" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -404,10 +404,10 @@
       display: grid; grid-template-columns: repeat(3,1fr);
       gap: 16px; margin-top: 48px;
     }
-    .reel-card { position: relative; overflow: hidden; aspect-ratio: 4/5; cursor: pointer; background: var(--ink); }
-    .reel-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.3s; }
+    .reel-card { position: relative; overflow: hidden; aspect-ratio: 9/16; cursor: pointer; }
+    .reel-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
     .reel-card:hover img { transform: scale(1.04); }
-    .reel-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: none; }
+    .reel-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
     .reel-card.playing video { display: block; }
     .reel-card.playing img { display: none; }
     .reel-overlay {
@@ -422,7 +422,7 @@
       border: 1px solid rgba(255,255,255,0.4);
       display: flex; align-items: center; justify-content: center;
     }
-    @media (max-width: 700px) { .reels-grid { grid-template-columns: 1fr; gap: 16px; } }
+    @media (max-width: 700px) { .reels-grid { grid-template-columns: 1fr; gap: 16px; } .reel-card { aspect-ratio: 9/14; } }
 
     /* ═══ PREÇO — destaque máximo ════════════════════════ */
     .preco { background: var(--paper); }
@@ -667,7 +667,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="/" class="nav-brand">
+  <a href="./" class="nav-brand">
     <svg width="34" height="20" viewBox="0 0 56 32" fill="none">
       <path d="M8 16 A20 20 0 0 1 48 16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round" fill="none"/>
       <line x1="4" y1="16" x2="52" y2="16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round"/>
@@ -690,7 +690,25 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.85) 100%);"></div>
+  <video id="hero-video" loop playsinline class="hero-img" style="object-fit:cover;">
+    <source src="hairbooster.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <button id="hero-play-btn" onclick="startHeroVideo()" aria-label="Reproduzir vídeo com som" style="
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    z-index:3; display:flex; flex-direction:column; align-items:center; gap:12px;
+    background:none; border:none; cursor:pointer; transition:opacity 0.3s;
+  ">
+    <div style="
+      width:72px; height:72px; background:rgba(196,168,112,0.85); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      backdrop-filter:blur(4px); border:2px solid rgba(255,255,255,0.2);
+      transition:transform 0.2s, background 0.2s;
+    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <svg width="22" height="26" viewBox="0 0 18 20" fill="white"><path d="M1 1l16 9L1 19V1z"/></svg>
+    </div>
+    <span style="font-family:'Jura',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(246,242,234,0.75);">Assistir com som</span>
+  </button>
   <div class="hero-content">
 
     <div class="hero-kicker">
@@ -711,7 +729,7 @@
     </div>
 
     <p class="hero-sub">
-      A <span class="crownus-red">Crown'us Hair Booster</span> é aplicada no salão por profissional — e você leva o frasco pra casa com <strong>cerca de 30 aplicações</strong>. É mais barato que uma hidratação avulsa, e o produto vai com você.
+      A <span class="crownus-red"><span class="crownus-red">Crown'us</span> Hair Booster</span> é aplicada no salão por profissional — e você leva o frasco pra casa com <strong>cerca de 30 aplicações</strong>. É mais barato que uma hidratação avulsa, e o produto vai com você.
     </p>
 
     <div class="hero-btns">
@@ -893,18 +911,18 @@
     <h2 class="section-title">Quem já viveu a experiência</h2>
     <div class="reels-grid">
       <div class="reel-card" id="reel1" onclick="playReel('reel1','rvid1')">
-        <img src="/reel-laura.jpeg" alt="Resultado Crown'us" />
-        <video id="rvid1" loading="lazy" src="/reel-laura.mp4" loop playsinline></video>
+        <img src="reel1.jpg" alt="Resultado Crown'us" />
+        <video id="rvid1" loading="lazy" src="reel1.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
       <div class="reel-card" id="reel2" onclick="playReel('reel2','rvid2')">
-        <img src="/experiencianosalao.jpeg" alt="Resultado Crown'us" />
-        <video id="rvid2" loading="lazy" src="/experiencianosalao.mp4" loop playsinline></video>
+        <img src="reel2.jpg" alt="Resultado Crown'us" />
+        <video id="rvid2" loading="lazy" src="reel2.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
       <div class="reel-card" id="reel3" onclick="playReel('reel3','rvid3')">
-        <img src="/reel-finalizar.jpeg" alt="Resultado Crown'us" />
-        <video id="rvid3" loading="lazy" src="/reel-finalizar.mp4" loop playsinline></video>
+        <img src="reel3.jpg" alt="Resultado Crown'us" />
+        <video id="rvid3" loading="lazy" src="reel3.mp4" loop playsinline></video>
         <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
       </div>
     </div>
@@ -951,7 +969,7 @@
   <div class="container">
     <div class="sobre-inner">
       <div>
-        <img src="/hairbooster-mosaic.jpeg" alt="Bruna Mocarzel — Fitra Hub Salões" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;" />
+        <img src="Bruna.PNG" alt="Bruna Mocarzel — Fitra Hub Salões" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;" />
       </div>
       <div class="sobre-content">
         <p class="section-label">Quem está por trás da Fitra Hub</p>
@@ -993,227 +1011,4 @@
           Funciona para cabelo colorido ou com química?
           <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
         </button>
-        <div class="faq-answer">Sim. A Hair Booster é indicada para todos os tipos de cabelo — lisos, ondulados, cacheados e crespos, naturais ou com procedimentos químicos como coloração, descoloração ou progressiva. A fórmula é suave e segura para uso diário.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Preciso ir ao salão para comprar?
-          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
-        </button>
-        <div class="faq-answer">Não. Você reserva aqui pelo site e a Bruna entra em contato pelo WhatsApp para confirmar data e local. O tratamento é feito no salão parceiro, e você já sai com o kit em mãos.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Posso pagar parcelado?
-          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
-        </button>
-        <div class="faq-answer">Sim. Você pode pagar em até 3× de R$ 79,00 no cartão de crédito, ou à vista por Pix com o valor de R$ 199,00. O pagamento é confirmado diretamente com a Bruna pelo WhatsApp.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FORMULÁRIO -->
-<section class="form-section" id="reservar">
-  <div class="container">
-    <p class="section-label">Reserve sua vaga</p>
-    <h2 class="section-title">Garanta sua experiência<br />Crown'us agora</h2>
-    <div class="divider-gold"></div>
-    <p class="section-desc">Preencha o formulário abaixo e a Bruna entrará em contato pelo WhatsApp para confirmar sua reserva.</p>
-    <div class="form-tabs">
-      <button class="form-tab active" onclick="switchTab('cliente')">Quero participar</button>
-      <button class="form-tab" onclick="switchTab('salao')">Sou salão parceiro</button>
-    </div>
-
-    <!-- PAINEL CLIENTE -->
-    <div class="form-panel active" id="panel-cliente">
-      <form id="form-cliente" onsubmit="submitCliente(event)">
-        <div class="form-grid">
-          <div class="field">
-            <label for="c-nome">Nome completo *</label>
-            <input type="text" id="c-nome" name="nome" placeholder="Seu nome" required />
-          </div>
-          <div class="field">
-            <label for="c-whatsapp">WhatsApp *</label>
-            <input type="tel" id="c-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
-          </div>
-          <div class="field">
-            <label for="c-cidade">Cidade *</label>
-            <input type="text" id="c-cidade" name="cidade" placeholder="Sua cidade" required />
-          </div>
-          <div class="field">
-            <label for="c-cabelo">Tipo de cabelo</label>
-            <select id="c-cabelo" name="cabelo">
-              <option value="" disabled selected>Selecione</option>
-              <option>Liso</option>
-              <option>Ondulado</option>
-              <option>Cacheado</option>
-              <option>Crespo</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="c-obs">Observações</label>
-            <textarea id="c-obs" name="obs" placeholder="Alguma informação adicional?"></textarea>
-          </div>
-        </div>
-        <div class="form-submit">
-          <button type="submit" class="btn-gold">
-            Quero reservar minha vaga
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-        <p class="form-notice">Ao enviar, você será redirecionada para o WhatsApp para finalizar o agendamento.</p>
-      </form>
-    </div>
-
-    <!-- PAINEL SALÃO -->
-    <div class="form-panel" id="panel-salao">
-      <form id="form-salao" onsubmit="submitSalao(event)">
-        <div class="form-grid">
-          <div class="field">
-            <label for="s-nome-salao">Nome do salão *</label>
-            <input type="text" id="s-nome-salao" name="nome_salao" placeholder="Nome do estabelecimento" required />
-          </div>
-          <div class="field">
-            <label for="s-responsavel">Responsável *</label>
-            <input type="text" id="s-responsavel" name="responsavel" placeholder="Nome do proprietário" required />
-          </div>
-          <div class="field">
-            <label for="s-whatsapp">WhatsApp *</label>
-            <input type="tel" id="s-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
-          </div>
-          <div class="field">
-            <label for="s-cidade">Cidade *</label>
-            <input type="text" id="s-cidade" name="cidade" placeholder="Cidade" required />
-          </div>
-        </div>
-        <div class="form-submit">
-          <button type="submit" class="btn-gold">
-            Quero ser salão parceiro
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-        <p class="form-notice">Ao enviar, você será redirecionada para o WhatsApp. Retornaremos em até 24h úteis.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-dsc-name">
-        Do Salão Pra Sua Casa
-        <span>plataforma de experiência</span>
-      </div>
-      <p class="footer-tagline">Curadoria de experiências capilares.<br />Do profissional para o seu dia a dia.</p>
-      <a href="https://dosalaoparasuacasa.com.br" class="footer-site">dosalaoparasuacasa.com.br</a>
-    </div>
-    <div>
-      <p class="footer-col-label">Navegação</p>
-      <div class="footer-links">
-        <a href="#reservar" class="footer-link">Reservar experiência</a>
-        <a href="#como-funciona" class="footer-link">Como funciona</a>
-        <a href="#faq" class="footer-link">Dúvidas frequentes</a>
-        <a href="https://wa.me/5511982365924" target="_blank" class="footer-link">WhatsApp</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-partner-block">
-        <p class="footer-partner-label">Parceira deste mês</p>
-        <p class="footer-partner-name">Crown'us Professional</p>
-        <p class="footer-partner-desc">Linha profissional de tratamento capilar. Formulada para salões, pensada para a sua rotina.</p>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Do Salão Pra Sua Casa. Todos os direitos reservados.</p>
-    <p class="footer-platform">Uma iniciativa <a href="#">Fitra Hub Salões</a></p>
-  </div>
-</footer>
-
-<!-- WhatsApp Flutuante -->
-<a href="https://wa.me/5511982365924?text=Olá! Vi o site da Crown'us e quero saber mais sobre a experiência." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale no WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.504 3.93 1.384 5.6L0 24l6.584-1.724A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.792 9.792 0 0 1-5.031-1.388l-.36-.214-3.737.979 1-3.647-.235-.375A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
-</a>
-
-<script>
-  const WA_NUM = '5511982365924';
-
-  /* TABS */
-  function switchTab(tab) {
-    document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
-    document.querySelector('.form-tab[onclick*="' + tab + '"]').classList.add('active');
-    document.getElementById('panel-' + tab).classList.add('active');
-  }
-
-  /* FAQ */
-  function toggleFaq(btn) {
-    const item = btn.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  }
-
-  /* VIDEO EVENTO */
-  function toggleVideo(id, btn) {
-    const vid = document.getElementById(id);
-    if (vid.paused) {
-      vid.play();
-      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" fill="white"><rect x="1" y="1" width="4" height="12"/><rect x="9" y="1" width="4" height="12"/></svg>';
-    } else {
-      vid.pause();
-      btn.innerHTML = '<svg width="18" height="20" viewBox="0 0 18 20" fill="white"><path d="M1 1l16 9L1 19V1z"/></svg>';
-    }
-  }
-
-  /* REELS */
-  function playReel(cardId, vidId) {
-    const card = document.getElementById(cardId);
-    const vid = document.getElementById(vidId);
-    if (card.classList.contains('playing')) {
-      vid.pause(); card.classList.remove('playing');
-    } else {
-      document.querySelectorAll('.reel-card.playing').forEach(c => {
-        c.classList.remove('playing'); c.querySelector('video').pause();
-      });
-      card.classList.add('playing');
-      vid.muted = false;
-      const playPromise = vid.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          vid.muted = true;
-          vid.play();
-        });
-      }
-    }
-  }
-
-  /* FORM CLIENTE */
-  async function submitCliente(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    const orig = btn.textContent; btn.textContent = 'Enviando...'; btn.disabled = true;
-    const data = new FormData(e.target);
-    const obj = Object.fromEntries(data.entries());
-    const msg = encodeURIComponent('Olá Bruna! Me chamo ' + (obj.nome || '') + ' e gostaria de reservar minha vaga na experiência Crown\'us.');
-    window.open('https://wa.me/' + WA_NUM + '?text=' + msg, '_blank');
-    btn.textContent = orig; btn.disabled = false;
-  }
-
-  /* FORM SALÃO */
-  async function submitSalao(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    const orig = btn.textContent; btn.textContent = 'Enviando...'; btn.disabled = true;
-    const data = new FormData(e.target);
-    const obj = Object.fromEntries(data.entries());
-    const msg = encodeURIComponent('Olá! Sou ' + (obj.responsavel || '') + ' do ' + (obj.nome_salao || '') + ' e quero saber mais sobre parceria Crown\'us.');
-    window.open('https://wa.me/' + WA_NUM + '?text=' + msg, '_blank');
-    btn.textContent = orig; btn.disabled = false;
-  }
-</script>
-</body>
-</html>
+        <div class="faq-answer">Sim. A Hair Booster é indicada para todos os tipos de cabelo — lisos, ondulados, cacheados e crespos, naturais ou com procedimentos químicos como coloração, descoloração ou progressiva.

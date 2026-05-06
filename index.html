@@ -1,673 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="f3xl1UgCE9nd6G9PuwildShXZPifNUBuqjMiQEK0Ajc" />
-  <title>Experiência Hair Booster <span class="crownus-red">Crown'us</span> — Do Salão Pra Sua Casa</title>
-  <meta name="description" content="Tratamento profissional no salão + kit com 30 aplicações pra levar pra casa. 3 minutos no banho. Resultado real. A partir de R$ 199." />
-  <meta property="og:title" content="Experiência <span class="crownus-red">Crown'us</span> — Do Salão Pra Sua Casa" />
-  <meta property="og:description" content="Mais barato que uma hidratação no salão e você ainda leva o produto pra casa. 30 aplicações. 3 minutos no banho. Reserve sua vaga." />
-  <meta property="og:image" content="https://crownus-scs.netlify.app/hairbooster.png" />
-  <meta property="og:url" content="https://crownus-scs.netlify.app/" />
-  <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://crownus-scs.netlify.app/" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Bruna Mocarzel — Consultora Crown'us | Do Salão Para Casa</title>
+<meta name="description" content="Cartão digital da Bruna — consultora Crown'us no ABC Paulista. Salve o contato, garanta vaga na imersão The Inside Beauty 15/06/2026 e agende sua demonstração." />
+<link rel="canonical" href="https://dosalaoparasuacasa.com.br/bruna/" />
+<link rel="icon" href="../favicon.png" type="image/png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Jura:wght@300;400;500&display=swap" rel="stylesheet" />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://dosalaoparasuacasa.com.br/bruna/" />
+<meta property="og:title" content="Bruna Mocarzel — Consultora Crown'us" />
+<meta property="og:description" content="Consultora Crown'us no ABC Paulista. Imersão The Inside Beauty 15/06/2026." />
+<meta property="og:image" content="https://dosalaoparasuacasa.com.br/bruna/bruna-avatar.png" />
+<meta property="og:locale" content="pt_BR" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Experiência <span class="crownus-red">Crown'us Hair Booster</span> — Do Salão Pra Sua Casa",
-    "startDate": "2025-06-15",
-    "location": { "@type": "Place", "name": "Pelle Capelli", "address": { "@type": "PostalAddress", "streetAddress": "Rua Siqueira Campos, 1000", "addressLocality": "Santo André", "addressRegion": "SP", "addressCountry": "BR" } },
-    "organizer": { "@type": "Person", "name": "Bruna Mocarzel", "url": "https://crownus-scs.netlify.app/" }
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Jura:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:       #0A0A0A;
+    --paper:     #F6F2EA;
+    --paper-mid: #EDE8DF;
+    --paper-drk: #DDD8CE;
+    --gold:      #C4A870;
+    --gold-dark: #9E8348;
+    --red:       #C41E2F;
+    --red-dark:  #a31827;
+    --ash:       #8C8882;
+    --text:      #3A3830;
+    --text-mid:  #6A6560;
+    --white:     #FFFFFF;
+    --whatsapp:  #25d366;
+
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans:  'Instrument Sans', system-ui, sans-serif;
+    --mono:  'Jura', system-ui, sans-serif;
   }
-  </script>
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
 
-    :root {
-      --ink:       #0A0A0A;
-      --paper:     #F6F2EA;
-      --paper-mid: #EDE8DF;
-      --paper-drk: #DDD8CE;
-      --gold:      #C4A870;
-      --gold-dark: #9E8348;
-      --red:       #C41E2F;
-      --red-dark:  #a31827;
-      --ash:       #8C8882;
-      --text:      #3A3830;
-      --text-mid:  #6A6560;
-      --white:     #FFFFFF;
+  /* ═══ NAV (mesma do site) ════════════════════════════ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.97);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 36px; height: 64px;
+    border-bottom: 1px solid rgba(196,168,112,0.15);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-dsc-name {
+    font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase; color: #F6F2EA; line-height: 1;
+  }
+  .nav-dsc-name span {
+    display: block; font-family: var(--serif); font-style: italic;
+    font-weight: 400; font-size: 0.66rem; letter-spacing: 0.06em;
+    text-transform: none; color: var(--gold); margin-top: 2px;
+  }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .nav-tag {
+    font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em;
+    text-transform: uppercase; color: rgba(255,255,255,0.45);
+  }
+  .nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); }
+  @media (max-width: 680px) { nav { padding: 0 20px; } .nav-right { display: none; } }
 
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans:  'Instrument Sans', system-ui, sans-serif;
-      --mono:  'Jura', system-ui, sans-serif;
-    }
+  /* ═══ HERO compacto ══════════════════════════════════ */
+  main { padding-top: 64px; }
+  .wrap { max-width: 520px; margin: 0 auto; padding: 32px 24px 64px; }
 
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--sans);
-      color: var(--text);
-      background: var(--paper);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
+  .hero { text-align: center; padding: 24px 0 8px; }
+  .avatar {
+    width: 132px; height: 132px; border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--paper);
+    outline: 1px solid rgba(196,168,112,0.4);
+    outline-offset: 4px;
+    box-shadow: 0 8px 24px rgba(10,10,10,0.10);
+    margin-bottom: 22px;
+  }
+  .kicker {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 14px;
+  }
+  .kicker-line { width: 24px; height: 1px; background: var(--gold); }
+  .kicker-text {
+    font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--gold-dark);
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 7vw, 3rem);
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.005em;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-dark); }
+  .role {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-mid);
+    margin-bottom: 18px;
+  }
+  .tag-pill {
+    display: inline-flex; align-items: center; gap: 0;
+    background: var(--gold);
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .tag-pill-item {
+    padding: 7px 14px;
+    font-family: var(--mono); font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink);
+    border-right: 1px solid rgba(10,10,10,0.15);
+  }
+  .tag-pill-item:last-child { border-right: none; }
 
-    /* ═══ NAV ════════════════════════════════════════════ */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(10,10,10,0.97);
-      backdrop-filter: blur(8px);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 36px; height: 64px;
-      border-bottom: 1px solid rgba(196,168,112,0.15);
-    }
-    .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .nav-dsc-name {
-      font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.16em; text-transform: uppercase; color: #F6F2EA; line-height: 1;
-    }
-    .nav-dsc-name span {
-      display: block; font-family: var(--serif); font-style: italic;
-      font-weight: 400; font-size: 0.66rem; letter-spacing: 0.06em;
-      text-transform: none; color: var(--gold); margin-top: 2px;
-    }
-    .nav-right { display: flex; align-items: center; gap: 20px; }
-    .nav-partner-label {
-      font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em;
-      text-transform: uppercase; color: rgba(255,255,255,0.35);
-    }
-    .nav-partner-name {
-      font-family: var(--serif); font-size: 1rem;
-      font-weight: 500; color: rgba(255,255,255,0.65);
-    }
-    .nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); }
-    .nav-cta {
-      background: var(--gold); color: var(--ink);
-      font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      text-decoration: none; padding: 10px 22px;
-      transition: background 0.2s;
-    }
-    .nav-cta:hover { background: var(--gold-dark); color: var(--white); }
-    @media (max-width: 680px) {
-      nav { padding: 0 20px; }
-      .nav-right { display: none; }
-    }
+  /* ═══ CTA primário (vCard) ═══════════════════════════ */
+  .save-contact {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    width: 100%; margin: 28px 0 12px;
+    padding: 18px 24px;
+    background: var(--ink); color: var(--paper);
+    font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    border: none; cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .save-contact:hover, .save-contact:active {
+    background: var(--gold); color: var(--ink); transform: translateY(-1px);
+  }
+  .save-contact svg { width: 18px; height: 18px; }
 
-    /* ═══ HERO — fundo escuro, imagem ════════════════════ */
-    .hero {
-      position: relative; min-height: 100vh;
-      display: flex; flex-direction: column; justify-content: flex-end;
-      background: var(--ink); overflow: hidden;
-    }
-    .hero-img {
-      position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; object-position: center top; opacity: 0.55;
-    }
-    .hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.55) 40%, rgba(10,10,10,0.1) 100%);
-    }
-    .hero-content {
-      position: relative; z-index: 2;
-      max-width: 800px; padding: 0 48px 80px;
-    }
-    .hero-kicker {
-      display: inline-flex; align-items: center; gap: 10px;
-      margin-bottom: 20px;
-    }
-    .hero-kicker-line { width: 28px; height: 1px; background: var(--gold); }
-    .hero-kicker-text {
-      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--gold);
-    }
-    .hero-title {
-      font-family: var(--serif);
-      font-size: clamp(2.8rem, 6vw, 4.6rem);
-      font-weight: 400; line-height: 1.1; color: #F6F2EA; margin-bottom: 20px;
-    }
-    .hero-title em { font-style: italic; color: rgba(246,242,234,0.78); }
-    .hero-title strong { font-weight: 600; color: #F6F2EA; }
+  /* ═══ Seção ══════════════════════════════════════════ */
+  .section { margin-top: 36px; }
+  .section-label {
+    font-family: var(--mono); font-size: 0.66rem; font-weight: 500;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold-dark); margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.5rem; font-weight: 500;
+    color: var(--ink); line-height: 1.15;
+  }
+  .divider-gold { width: 36px; height: 1px; background: var(--gold); margin: 12px 0 22px; }
 
-    /* PILL de valor — o argumento principal */
-    .hero-value-pill {
-      display: inline-flex; align-items: center; gap: 0;
-      background: var(--gold); margin-bottom: 24px;
-      overflow: hidden;
-    }
-    .hero-pill-item {
-      padding: 10px 20px;
-      font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
-      letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink);
-      border-right: 1px solid rgba(10,10,10,0.15);
-    }
-    .hero-pill-item:last-child { border-right: none; }
+  /* ═══ Cards de link ══════════════════════════════════ */
+  .card-list { display: flex; flex-direction: column; gap: 10px; }
+  .link-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 18px 18px;
+    background: var(--paper-mid);
+    border: 1px solid var(--paper-drk);
+    transition: border-color 0.2s, transform 0.15s, background 0.2s;
+  }
+  .link-card:hover, .link-card:active {
+    border-color: var(--gold);
+    background: var(--white);
+    transform: translateY(-1px);
+  }
+  .link-card .icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper);
+    border: 1px solid var(--paper-drk);
+    color: var(--ink);
+  }
+  .link-card .icon svg { width: 18px; height: 18px; }
+  .link-card.primary .icon { background: var(--ink); color: var(--gold); border-color: var(--ink); }
+  .link-card.gold .icon { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+  .link-card.whatsapp .icon { background: var(--whatsapp); color: var(--white); border-color: var(--whatsapp); }
+  .link-card .body { flex: 1; min-width: 0; }
+  .link-card .label {
+    font-family: var(--serif); font-size: 1.15rem; font-weight: 500;
+    color: var(--ink); display: block; line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  .link-card .sub {
+    font-family: var(--sans); font-size: 0.82rem; font-weight: 300;
+    color: var(--text-mid);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .link-card .arrow {
+    font-family: var(--mono); color: var(--gold-dark);
+    font-size: 1.1rem; flex-shrink: 0; letter-spacing: 0;
+  }
 
-    .hero-sub {
-      font-family: var(--sans); font-size: 1.08rem; font-weight: 300;
-      line-height: 1.65; color: rgba(246,242,234,0.7);
-      max-width: 560px; margin-bottom: 36px;
-    }
-    .hero-sub strong { color: #F6F2EA; font-weight: 600; }
+  /* ═══ Badge do evento ════════════════════════════════ */
+  .event-badge {
+    background: var(--ink);
+    border: 1px solid rgba(196,168,112,0.3);
+    color: var(--paper);
+    padding: 22px 22px;
+    margin-bottom: 12px;
+    text-align: left;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .event-badge .ev-tag {
+    font-family: var(--mono); font-size: 0.62rem; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .event-badge .ev-title {
+    font-family: var(--serif); font-size: 1.6rem; font-weight: 400;
+    color: var(--paper); line-height: 1.1;
+  }
+  .event-badge .ev-meta {
+    font-family: var(--sans); font-size: 0.85rem; font-weight: 300;
+    color: rgba(246,242,234,0.6);
+    margin-top: 4px;
+  }
 
-    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
-    .btn-gold {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: var(--gold); color: var(--ink);
-      font-family: var(--mono); font-size: 0.8rem; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      text-decoration: none; padding: 16px 36px;
-      border: none; cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .btn-gold:hover { background: var(--gold-dark); color: var(--white); transform: translateY(-1px); }
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: transparent; color: rgba(246,242,234,0.6);
-      font-family: var(--mono); font-size: 0.78rem; font-weight: 400;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      text-decoration: none; padding: 16px 32px;
-      border: 1px solid rgba(255,255,255,0.18); cursor: pointer;
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
-    @media (max-width: 600px) { .hero-content { padding: 0 24px 60px; } }
+  /* ═══ Footer ═════════════════════════════════════════ */
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--paper-drk);
+    text-align: center;
+  }
+  .foot-text {
+    font-family: var(--mono); font-size: 0.62rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ash); line-height: 1.8;
+  }
+  .foot-text a { color: var(--gold-dark); border-bottom: 1px dotted var(--paper-drk); }
+</style>
 
-    /* ═══ SEÇÕES COMUNS ═══════════════════════════════════ */
-    section { padding: 88px 40px; }
-    .container { max-width: 1060px; margin: 0 auto; }
-    .section-label {
-      font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.28em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 14px;
-    }
-    .section-label.red { color: var(--red); }
-    .section-title {
-      font-family: var(--serif);
-      font-size: clamp(2.1rem, 3.8vw, 3rem);
-      font-weight: 400; line-height: 1.2; margin-bottom: 16px;
-      color: var(--ink);
-    }
-    .section-desc {
-      font-family: var(--sans); font-size: 1.05rem; font-weight: 300;
-      line-height: 1.75; color: var(--text-mid); max-width: 580px;
-    }
-    .divider-gold { width: 48px; height: 1px; background: var(--gold); margin: 20px 0 28px; }
-    .divider-red  { width: 48px; height: 2px; background: var(--red);  margin: 20px 0 28px; }
-    @media (max-width: 600px) { section { padding: 64px 24px; } }
-
-    /* ═══ NÚMEROS / ARGUMENTO ════════════════════════════ */
-    /* Faixa creme escuro com os 4 grandes argumentos de venda */
-    .numeros {
-      background: var(--ink);
-      padding: 56px 40px;
-      border-top: 1px solid rgba(196,168,112,0.15);
-      border-bottom: 1px solid rgba(196,168,112,0.15);
-    }
-    .numeros-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: grid; grid-template-columns: repeat(4,1fr);
-      gap: 0;
-    }
-    .numero-item {
-      padding: 32px 28px;
-      border-right: 1px solid rgba(196,168,112,0.12);
-    }
-    .numero-item:last-child { border-right: none; }
-    .numero-val {
-      font-family: var(--serif);
-      font-size: 3.2rem; font-weight: 300;
-      color: var(--gold); line-height: 1; margin-bottom: 8px;
-    }
-    .numero-label {
-      font-family: var(--sans); font-size: 1rem; font-weight: 300;
-      line-height: 1.5; color: rgba(246,242,234,0.65);
-    }
-    .numero-label strong { color: #F6F2EA; font-weight: 600; display: block; }
-    @media (max-width: 860px) {
-      .numeros-inner { grid-template-columns: 1fr 1fr; }
-      .numero-item:nth-child(2) { border-right: none; }
-      .numero-item:nth-child(3) { border-top: 1px solid rgba(196,168,112,0.12); }
-      .numero-item:nth-child(4) { border-top: 1px solid rgba(196,168,112,0.12); border-right: none; }
-    }
-    @media (max-width: 480px) {
-      .numeros-inner { grid-template-columns: 1fr; }
-      .numero-item { border-right: none; border-top: 1px solid rgba(196,168,112,0.12); }
-      .numero-item:first-child { border-top: none; }
-    }
-
-    /* ═══ BENEFÍCIOS — o que o produto devolve ═══════════ */
-    .beneficios { background: var(--paper); }
-    .benef-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 24px; margin-top: 52px;
-    }
-    .benef-card {
-      background: var(--paper-mid);
-      border: 1px solid var(--paper-drk);
-      padding: 32px 28px;
-    }
-    .benef-icon {
-      font-family: var(--serif); font-size: 2.4rem;
-      font-weight: 300; color: var(--gold);
-      margin-bottom: 14px; line-height: 1;
-    }
-    .benef-title {
-      font-family: var(--serif); font-size: 1.3rem;
-      font-weight: 500; color: var(--ink);
-      margin-bottom: 10px;
-    }
-    .benef-desc {
-      font-family: var(--sans); font-size: 0.96rem;
-      font-weight: 300; line-height: 1.7; color: var(--text-mid);
-    }
-    @media (max-width: 860px) { .benef-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 500px) { .benef-grid { grid-template-columns: 1fr; } }
-
-    /* ═══ COMPARATIVO DE VALOR ════════════════════════════ */
-    .comparativo {
-      background: var(--ink);
-      padding: 88px 40px;
-    }
-    .comp-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 40px; align-items: center;
-    }
-    .comp-text .section-title { color: #F6F2EA; }
-    .comp-text .section-desc  { color: rgba(246,242,234,0.6); max-width: 440px; }
-    .comp-text .section-desc strong { color: #F6F2EA; }
-    .comp-cards { display: flex; flex-direction: column; gap: 16px; }
-    .comp-card {
-      padding: 24px 28px;
-      display: flex; align-items: center; gap: 20px;
-    }
-    .comp-card.old {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      opacity: 0.6;
-    }
-    .comp-card.new {
-      background: rgba(196,168,112,0.12);
-      border: 1px solid rgba(196,168,112,0.4);
-    }
-    .comp-card-label {
-      font-family: var(--mono); font-size: 0.62rem;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: rgba(255,255,255,0.35); margin-bottom: 4px;
-    }
-    .comp-card.new .comp-card-label { color: var(--gold); }
-    .comp-card-title {
-      font-family: var(--serif); font-size: 1.5rem;
-      font-weight: 400; color: rgba(255,255,255,0.55); line-height: 1.2;
-    }
-    .comp-card.new .comp-card-title { color: #F6F2EA; }
-    .comp-card-price {
-      margin-left: auto; text-align: right; flex-shrink: 0;
-    }
-    .comp-card-price-val {
-      font-family: var(--serif); font-size: 2rem;
-      font-weight: 300; color: rgba(255,255,255,0.4); line-height: 1;
-    }
-    .comp-card.new .comp-card-price-val { color: var(--gold); }
-    .comp-card-price-sub {
-      font-family: var(--mono); font-size: 0.62rem;
-      letter-spacing: 0.08em; color: rgba(255,255,255,0.3);
-      margin-top: 4px;
-    }
-    .comp-card.new .comp-card-price-sub { color: rgba(196,168,112,0.7); }
-    @media (max-width: 760px) {
-      .comp-inner { grid-template-columns: 1fr; }
-    }
-
-    /* ═══ COMO FUNCIONA ══════════════════════════════════ */
-    .como { background: var(--paper); }
-    .steps-grid {
-      display: grid; grid-template-columns: repeat(4,1fr);
-      gap: 28px; margin-top: 52px;
-    }
-    .step { border-top: 1px solid var(--gold); padding-top: 26px; }
-    .step-num {
-      font-family: var(--serif); font-size: 2.8rem; font-weight: 300;
-      color: var(--gold); opacity: 0.45; line-height: 1; margin-bottom: 12px;
-    }
-    .step-title {
-      font-family: var(--serif); font-size: 1.28rem; font-weight: 500;
-      color: var(--ink); margin-bottom: 10px;
-    }
-    .step-desc {
-      font-family: var(--sans); font-size: 0.96rem; font-weight: 300;
-      line-height: 1.7; color: var(--text-mid);
-    }
-    @media (max-width: 900px) { .steps-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .steps-grid { grid-template-columns: 1fr; } }
-
-    /* ═══ EVENTO ══════════════════════════════════════════ */
-    .evento { background: var(--paper-mid); border-top: 1px solid var(--paper-drk); border-bottom: 1px solid var(--paper-drk); }
-    .evento-info {
-      display: flex; gap: 40px; flex-wrap: wrap;
-      margin: 28px 0 44px;
-    }
-    .evento-detalhe { display: flex; flex-direction: column; gap: 5px; }
-    .evento-detalhe-label {
-      font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--red);
-    }
-    .evento-detalhe-val {
-      font-family: var(--serif); font-size: 1.15rem; color: var(--ink);
-    }
-    .videos-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-    }
-    .video-card { position: relative; overflow: hidden; }
-    .video-card video {
-      width: 100%; display: block; aspect-ratio: 9/16;
-      object-fit: cover; background: var(--paper-drk);
-    }
-    .video-card-info {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(transparent, rgba(10,10,10,0.88));
-      padding: 20px 16px 16px;
-    }
-    .video-card-name { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; color: #F6F2EA; margin-bottom: 3px; }
-    .video-card-role { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.55); }
-    .video-play-btn {
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%,-50%);
-      width: 56px; height: 56px; background: rgba(196,30,47,0.88);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      cursor: pointer; border: none; transition: 0.2s;
-    }
-    .video-play-btn:hover { background: var(--red); transform: translate(-50%,-50%) scale(1.08); }
-    @media (max-width: 600px) { .videos-grid { grid-template-columns: 1fr; } }
-
-    /* ═══ HISTÓRICO ═══════════════════════════════════════ */
-    .historico { background: var(--paper); }
-    .historico-list { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
-    .historico-item {
-      background: var(--paper-mid); border: 1px solid var(--paper-drk);
-      padding: 8px 18px; font-family: var(--mono);
-      font-size: 0.74rem; letter-spacing: 0.06em; color: var(--text-mid);
-    }
-
-    /* ═══ REELS / FOTOS ═══════════════════════════════════ */
-    .reels { background: var(--paper-mid); }
-    .reels-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 16px; margin-top: 48px;
-    }
-    .reel-card { position: relative; overflow: hidden; aspect-ratio: 9/16; cursor: pointer; }
-    .reel-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-    .reel-card:hover img { transform: scale(1.04); }
-    .reel-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
-    .reel-card.playing video { display: block; }
-    .reel-card.playing img { display: none; }
-    .reel-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 50%);
-      display: flex; align-items: center; justify-content: center; transition: opacity 0.2s;
-    }
-    .reel-card.playing .reel-overlay { opacity: 0; pointer-events: none; }
-    .reel-play {
-      width: 48px; height: 48px; background: rgba(255,255,255,0.18);
-      backdrop-filter: blur(4px); border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.4);
-      display: flex; align-items: center; justify-content: center;
-    }
-    @media (max-width: 700px) { .reels-grid { grid-template-columns: 1fr; gap: 16px; } .reel-card { aspect-ratio: 9/14; } }
-
-    /* ═══ PREÇO — destaque máximo ════════════════════════ */
-    .preco { background: var(--paper); }
-    .preco-inner {
-      display: grid; grid-template-columns: 1.2fr 1fr;
-      gap: 72px; align-items: start;
-    }
-    .preco-box {
-      background: var(--ink);
-      border: 1px solid rgba(196,168,112,0.25);
-      padding: 44px 40px;
-    }
-    .preco-tag {
-      display: inline-block;
-      background: var(--gold); color: var(--ink);
-      font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 6px 14px; margin-bottom: 20px;
-    }
-    .preco-principal {
-      font-family: var(--serif); font-size: 3.4rem; font-weight: 300;
-      color: #F6F2EA; line-height: 1; margin-bottom: 4px;
-    }
-    .preco-parcelado {
-      font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em;
-      color: rgba(255,255,255,0.4); margin-bottom: 32px;
-    }
-    .preco-items { list-style: none; margin-bottom: 32px; }
-    .preco-items li {
-      display: flex; gap: 12px; align-items: flex-start;
-      font-family: var(--sans); font-size: 0.98rem;
-      color: rgba(246,242,234,0.75); margin-bottom: 14px; line-height: 1.55;
-    }
-    .preco-items li::before { content: "—"; color: var(--gold); flex-shrink: 0; margin-top: 1px; }
-    .preco-highlight {
-      background: rgba(196,168,112,0.1);
-      border: 1px solid rgba(196,168,112,0.25);
-      padding: 16px 18px; margin-bottom: 28px;
-    }
-    .preco-highlight p {
-      font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.06em;
-      line-height: 1.7; color: rgba(196,168,112,0.85);
-    }
-    .preco-highlight strong { color: var(--gold); font-weight: 500; }
-    .preco-date {
-      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em;
-      color: rgba(255,255,255,0.28); margin-top: 20px; line-height: 1.6;
-    }
-    @media (max-width: 768px) { .preco-inner { grid-template-columns: 1fr; gap: 48px; } }
-
-    /* ═══ SOBRE — Bruna como fundadora da DSC ════════════ */
-    .sobre { background: var(--paper-mid); }
-    .sobre-inner {
-      display: grid; grid-template-columns: 300px 1fr;
-      gap: 72px; align-items: start;
-    }
-    .sobre-foto-placeholder {
-      width: 100%; aspect-ratio: 3/4;
-      background: var(--paper-drk); border: 1px solid var(--paper-drk);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 12px;
-    }
-    .sobre-foto-placeholder svg { opacity: 0.3; color: var(--ash); }
-    .sobre-foto-placeholder span {
-      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em;
-      text-align: center; max-width: 180px; line-height: 1.5; color: var(--ash);
-    }
-    .sobre-quote {
-      font-family: var(--serif); font-size: 1.45rem; font-weight: 400;
-      font-style: italic; line-height: 1.45; color: var(--ink);
-      border-left: 2px solid var(--gold); padding-left: 24px;
-      margin: 26px 0 24px;
-    }
-    .sobre-text {
-      font-family: var(--sans); font-size: 1rem; font-weight: 300;
-      line-height: 1.8; color: var(--text-mid); margin-bottom: 14px;
-    }
-    .sobre-platform-note {
-      margin-top: 28px; padding: 18px 22px;
-      border: 1px solid var(--paper-drk);
-      background: var(--paper);
-    }
-    .sobre-platform-note p {
-      font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em;
-      line-height: 1.7; color: var(--ash);
-    }
-    .sobre-platform-note strong { color: var(--gold-dark); font-weight: 500; }
-    @media (max-width: 768px) {
-      .sobre-inner { grid-template-columns: 1fr; gap: 40px; }
-      .sobre-foto-placeholder { aspect-ratio: 4/3; }
-    }
-
-    /* ═══ FAQ ═════════════════════════════════════════════ */
-    .faq { background: var(--paper); }
-    .faq-list { margin-top: 48px; }
-    .faq-item { border-bottom: 1px solid var(--paper-drk); }
-    .faq-question {
-      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 22px 0; font-family: var(--serif); font-size: 1.24rem;
-      font-weight: 400; color: var(--ink); transition: color 0.2s;
-    }
-    .faq-question:hover { color: var(--gold-dark); }
-    .faq-icon {
-      width: 24px; height: 24px; border: 1px solid currentColor; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-left: 16px;
-      transition: transform 0.3s, background 0.2s, border-color 0.2s;
-    }
-    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--gold); border-color: var(--gold); color: var(--ink); }
-    .faq-answer {
-      max-height: 0; overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.2s;
-      font-family: var(--sans); font-size: 1rem; font-weight: 300;
-      line-height: 1.8; color: var(--text-mid);
-    }
-    .faq-item.open .faq-answer { max-height: 500px; padding-bottom: 22px; }
-
-    /* ═══ FORMULÁRIO ══════════════════════════════════════ */
-    .form-section { background: var(--paper-mid); border-top: 1px solid var(--paper-drk); }
-    .form-section .section-title { color: var(--ink); }
-    .form-section .section-desc  { color: var(--text-mid); }
-    .form-tabs {
-      display: flex; margin: 40px 0 0;
-      border-bottom: 2px solid var(--paper-drk);
-    }
-    .form-tab {
-      background: none; border: none; cursor: pointer;
-      font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--ash); padding: 14px 28px 14px 0;
-      border-bottom: 2px solid transparent; margin-bottom: -2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .form-tab.active { color: var(--ink); border-bottom-color: var(--gold); }
-    .form-panel { display: none; padding-top: 36px; }
-    .form-panel.active { display: block; }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .form-grid .full { grid-column: 1 / -1; }
-    .field { display: flex; flex-direction: column; gap: 8px; }
-    .field label {
-      font-family: var(--mono); font-size: 0.62rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase; color: var(--ash);
-    }
-    .field input, .field select, .field textarea {
-      background: var(--paper);
-      border: 1px solid var(--paper-drk);
-      padding: 13px 15px; font-family: var(--sans); font-size: 0.96rem;
-      color: var(--ink); transition: border-color 0.2s;
-      outline: none; -webkit-appearance: none; border-radius: 0;
-    }
-    .field input::placeholder, .field textarea::placeholder { color: var(--ash); }
-    .field input:focus, .field select:focus, .field textarea:focus {
-      border-color: var(--gold);
-    }
-    .field select option { background: var(--paper); color: var(--ink); }
-    .field textarea { resize: vertical; min-height: 90px; }
-    .form-submit { margin-top: 28px; }
-    .form-notice {
-      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.06em;
-      color: var(--ash); margin-top: 12px; line-height: 1.6;
-    }
-    @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } .form-grid .full { grid-column: 1; } }
-
-    /* ═══ FOOTER ══════════════════════════════════════════ */
-    footer {
-      background: var(--ink); padding: 56px 40px 40px;
-      border-top: 1px solid rgba(196,168,112,0.15);
-    }
-    .footer-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px;
-    }
-    .footer-dsc-name {
-      font-family: var(--sans); font-size: 0.78rem; font-weight: 700;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: #F6F2EA; line-height: 1;
-    }
-    .footer-dsc-name span {
-      display: block; font-family: var(--serif); font-style: italic;
-      font-weight: 400; font-size: 0.7rem; text-transform: none;
-      color: var(--gold); margin-top: 2px; letter-spacing: 0.06em;
-    }
-    .footer-tagline {
-      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em;
-      line-height: 1.7; color: rgba(255,255,255,0.25); margin: 12px 0 16px;
-    }
-    .footer-site {
-      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em;
-      color: var(--gold); text-decoration: none; opacity: 0.7;
-    }
-    .footer-site:hover { opacity: 1; }
-    .footer-col-label {
-      font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.22em;
-      text-transform: uppercase; color: rgba(255,255,255,0.2); margin-bottom: 16px;
-    }
-    .footer-links { display: flex; flex-direction: column; gap: 10px; }
-    .footer-link {
-      font-family: var(--sans); font-size: 0.9rem;
-      color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s;
-    }
-    .footer-link:hover { color: var(--gold); }
-    .footer-partner-block { padding: 20px; border: 1px solid rgba(196,30,47,0.2); }
-    .footer-partner-label {
-      font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 6px;
-    }
-    .footer-partner-name { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
-    .footer-partner-desc { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; line-height: 1.6; color: rgba(255,255,255,0.2); }
-    .footer-bottom {
-      max-width: 1060px; margin: 40px auto 0; padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
-    }
-    .footer-copy { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.15); }
-    .footer-platform { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; color: rgba(196,168,112,0.4); }
-    .footer-platform a { color: var(--gold); text-decoration: none; opacity: 0.7; }
-    .footer-platform a:hover { opacity: 1; }
-    @media (max-width: 860px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 540px) { footer { padding: 40px 24px; } .footer-inner { grid-template-columns: 1fr; gap: 36px; } }
-
-    /* ═══ WHATSAPP ════════════════════════════════════════ */
-    .whatsapp-float {
-      position: fixed; bottom: 24px; right: 24px; z-index: 999;
-      width: 58px; height: 58px; background: #25D366; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
-
-    /* Utils */
-    .text-center { text-align: center; }
-    .text-center .section-desc { margin: 0 auto; }
-    .text-center .divider-gold, .text-center .divider-red { margin-left: auto; margin-right: auto; }
-
-    .crownus-red { color: var(--red); font-style: inherit; font-weight: inherit; }
-  </style>
+<!-- GA4 (mesma propriedade do site do evento) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-23TMB6G2QW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-23TMB6G2QW');
+</script>
 </head>
-
 <body>
 
-<!-- NAV -->
+<!-- NAV (idêntica ao site) -->
 <nav>
-  <a href="./" class="nav-brand">
+  <a href="../" class="nav-brand">
     <svg width="34" height="20" viewBox="0 0 56 32" fill="none">
       <path d="M8 16 A20 20 0 0 1 48 16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round" fill="none"/>
       <line x1="4" y1="16" x2="52" y2="16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round"/>
@@ -680,335 +271,213 @@
     </div>
   </a>
   <div class="nav-right">
-    <span class="nav-partner-label">Parceira deste mês</span>
-    <div class="nav-sep"></div>
-    <span class="nav-partner-name"><span class="crownus-red">Crown'us</span></span>
-    <div class="nav-sep"></div>
-    <a href="#reservar" class="nav-cta">Reservar vaga</a>
+    <span class="nav-tag">Cartão da consultora</span>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <video id="hero-video" loop playsinline class="hero-img" style="object-fit:cover;">
-    <source src="hairbooster.mp4" type="video/mp4" />
-  </video>
-  <div class="hero-overlay"></div>
-  <button id="hero-play-btn" onclick="startHeroVideo()" aria-label="Reproduzir vídeo com som" style="
-    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-    z-index:3; display:flex; flex-direction:column; align-items:center; gap:12px;
-    background:none; border:none; cursor:pointer; transition:opacity 0.3s;
-  ">
-    <div style="
-      width:72px; height:72px; background:rgba(196,168,112,0.85); border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      backdrop-filter:blur(4px); border:2px solid rgba(255,255,255,0.2);
-      transition:transform 0.2s, background 0.2s;
-    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-      <svg width="22" height="26" viewBox="0 0 18 20" fill="white"><path d="M1 1l16 9L1 19V1z"/></svg>
-    </div>
-    <span style="font-family:'Jura',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(246,242,234,0.75);">Assistir com som</span>
-  </button>
-  <div class="hero-content">
+<main>
+  <div class="wrap">
 
-    <div class="hero-kicker">
-      <div class="hero-kicker-line"></div>
-      <span class="hero-kicker-text">Do Salão Pra Sua Casa apresenta</span>
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="bruna-avatar.png" alt="Bruna Mocarzel" class="avatar" loading="eager" />
+      <div class="kicker">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">Consultora Crown'us</span>
+        <span class="kicker-line"></span>
+      </div>
+      <h1>Bruna <em>Mocarzel</em></h1>
+      <p class="role">Fitra Hub Salões — ABC Paulista</p>
+      <div class="tag-pill">
+        <span class="tag-pill-item">Treinamento</span>
+        <span class="tag-pill-item">Consultoria</span>
+        <span class="tag-pill-item">Demos</span>
+      </div>
 
-    <h1 class="hero-title">
-      Tratamento profissional<br />
-      no salão. <em>Produto pra casa.</em><br />
-      <strong>Resultado todo dia.</strong>
-    </h1>
-
-    <div class="hero-value-pill">
-      <div class="hero-pill-item">30 aplicações</div>
-      <div class="hero-pill-item">3 min no banho</div>
-      <div class="hero-pill-item">R$ 199 tudo incluso</div>
-    </div>
-
-    <p class="hero-sub">
-      A <span class="crownus-red"><span class="crownus-red">Crown'us</span> Hair Booster</span> é aplicada no salão por profissional — e você leva o frasco pra casa com <strong>cerca de 30 aplicações</strong>. É mais barato que uma hidratação avulsa, e o produto vai com você.
-    </p>
-
-    <div class="hero-btns">
-      <a href="#reservar" class="btn-gold">
-        Quero minha vaga
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <a href="bruna.vcf" class="save-contact" download="Bruna-Mocarzel.vcf"
+         onclick="gtag('event','save_contact',{'method':'vcard'});">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+        Salvar meu contato
       </a>
-      <a href="#como-funciona" class="btn-ghost">Como funciona</a>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- CONVERSAR AGORA -->
+    <section class="section">
+      <p class="section-label">Conversar agora</p>
+      <h2 class="section-title">Fala comigo</h2>
+      <div class="divider-gold"></div>
+      <div class="card-list">
 
-<!-- NÚMEROS — argumento de venda -->
-<div class="numeros">
-  <div class="numeros-inner">
-    <div class="numero-item">
-      <div class="numero-val">30</div>
-      <div class="numero-label">
-        <strong>aplicações incluídas</strong>
-        no frasco que você leva pra casa
-      </div>
-    </div>
-    <div class="numero-item">
-      <div class="numero-val">3 min</div>
-      <div class="numero-label">
-        <strong>no banho</strong>
-        aplica, pausa, enxágua — simples assim
-      </div>
-    </div>
-    <div class="numero-item">
-      <div class="numero-val">R$ 199</div>
-      <div class="numero-label">
-        <strong>tudo incluso</strong>
-        salão + kit completo + suporte
-      </div>
-    </div>
-    <div class="numero-item">
-      <div class="numero-val">100%</div>
-      <div class="numero-label">
-        <strong>linha profissional</strong>
-        Vitamina E · Óleo de Avelã · Amêndoas
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- BENEFÍCIOS — o que o Hair Booster devolve -->
-<section class="beneficios">
-  <div class="container">
-    <p class="section-label red">O que o Hair Booster faz</p>
-    <h2 class="section-title">O que você vai sentir<br />desde a primeira aplicação</h2>
-    <div class="divider-gold"></div>
-    <div class="benef-grid">
-      <div class="benef-card">
-        <div class="benef-icon">01</div>
-        <div class="benef-title">Hidratação profunda</div>
-        <div class="benef-desc">Repõe o teor hídrico e os nutrientes perdidos. Cabelo macio e sedoso já no primeiro uso — sem precisar esperar semanas.</div>
-      </div>
-      <div class="benef-card">
-        <div class="benef-icon">02</div>
-        <div class="benef-title">Nutrição e emoliência</div>
-        <div class="benef-desc">O blend de Vitamina E, Óleo de Avelã e Amêndoas devolve lipídios e nutrição ao fio, deixando o cabelo com mais leveza e movimento.</div>
-      </div>
-      <div class="benef-card">
-        <div class="benef-icon">03</div>
-        <div class="benef-title">Brilho e maciez reais</div>
-        <div class="benef-desc">Fios visivelmente mais brilhantes, macios e fáceis de pentear. Reduz o frizz e o volume sem pesar.</div>
-      </div>
-      <div class="benef-card">
-        <div class="benef-icon">04</div>
-        <div class="benef-title">Resultado em 3 minutos</div>
-        <div class="benef-desc">Aplicação direta nos fios limpos e úmidos. Deixa agir 3 minutos no banho. Enxágua. Funciona para todos os tipos de cabelo.</div>
-      </div>
-      <div class="benef-card">
-        <div class="benef-icon">05</div>
-        <div class="benef-title">Livre de parabenos</div>
-        <div class="benef-desc">Fórmula com ativos naturais, composições seguras e transparentes. Sem testes em animais. Desenvolvido com propósito real.</div>
-      </div>
-      <div class="benef-card">
-        <div class="benef-icon">06</div>
-        <div class="benef-title">Para todos os tipos de fio</div>
-        <div class="benef-desc">Funciona em cabelos lisos, ondulados, cacheados e crespos. Naturais, coloridos, descoloridos ou com química.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPARATIVO DE VALOR -->
-<section class="comparativo">
-  <div class="container">
-    <div class="comp-inner">
-      <div class="comp-text">
-        <p class="section-label">Por que faz sentido</p>
-        <h2 class="section-title">Mais barato que uma hidratação avulsa — e você ainda leva o produto.</h2>
-        <div class="divider-gold"></div>
-        <p class="section-desc">
-          Uma hidratação no salão custa em média R$ 250. Você sai tratada, mas sem nada na mão.<br /><br />
-          Com a experiência <span class="crownus-red">Crown'us</span>, você faz o tratamento profissional <strong>e leva o frasco com cerca de 30 aplicações</strong> pra continuar em casa. Sai com o cabelo feito e com produto pra manter o resultado por meses.
-        </p>
-      </div>
-      <div class="comp-cards">
-        <div class="comp-card old">
-          <div>
-            <div class="comp-card-label">Hidratação avulsa no salão</div>
-            <div class="comp-card-title">Só o serviço.<br />Sem produto.</div>
+        <a class="link-card whatsapp"
+           href="https://wa.me/5511982365924?text=Oi%20Bruna%2C%20te%20conheci%20no%20porta-em-porta%20da%20Crown%27us%20e%20quero%20saber%20mais"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'whatsapp_bruna'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.307 1.265.49 1.697.628.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg></span>
+          <div class="body">
+            <span class="label">WhatsApp Bruna</span>
+            <span class="sub">+55 (11) 98236-5924</span>
           </div>
-          <div class="comp-card-price">
-            <div class="comp-card-price-val">R$ 250</div>
-            <div class="comp-card-price-sub">só o serviço</div>
-          </div>
-        </div>
-        <div class="comp-card new">
-          <div>
-            <div class="comp-card-label">Experiência <span class="crownus-red">Crown'us</span> · DSC</div>
-            <div class="comp-card-title">Salão + kit com<br />30 aplicações em casa.</div>
-          </div>
-          <div class="comp-card-price">
-            <div class="comp-card-price-val">R$ 199</div>
-            <div class="comp-card-price-sub">tudo incluso</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="como" id="como-funciona">
-  <div class="container">
-    <p class="section-label">O processo</p>
-    <h2 class="section-title">Do salão pra sua rotina<br />em 4 passos simples</h2>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h3 class="step-title">Você reserva sua vaga</h3>
-        <p class="step-desc">Preenche o formulário aqui no site. Vagas limitadas para garantir atendimento personalizado. Confirmamos pelo WhatsApp.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h3 class="step-title">Tratamento no salão</h3>
-        <p class="step-desc">Profissional certificado aplica a Hair Booster. Você sente o resultado na hora — cabelo macio, hidratado e com brilho real.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h3 class="step-title">Kit vai pra casa com você</h3>
-        <p class="step-desc">Você leva o frasco com cerca de 30 aplicações. 3 minutos no banho. Aplica, pausa, enxágua. Simples assim, todo dia.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h3 class="step-title">Suporte pelo WhatsApp</h3>
-        <p class="step-desc">A Bruna acompanha durante o período de uso — dúvidas sobre aplicação, resultado e cuidados. Não some depois da venda.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HISTÓRICO -->
-<section class="historico">
-  <div class="container">
-    <p class="section-label">Histórico</p>
-    <h2 class="section-title">Experiências já realizadas</h2>
-    <div class="divider-gold"></div>
-    <p class="section-desc">A DSC já conduziu experiências <span class="crownus-red">Crown'us</span> em salões de referência em São Paulo e região. Cada evento é planejado e acompanhado individualmente.</p>
-    <div class="historico-list">
-      <span class="historico-item">Espaço Perfil — Diadema</span>
-      <span class="historico-item">São Caetano do Sul</span>
-      <span class="historico-item">Santo André</span>
-      <span class="historico-item">São Paulo — SP</span>
-      <span class="historico-item">4+ eventos realizados</span>
-    </div>
-  </div>
-</section>
-
-<!-- REELS -->
-<section class="reels">
-  <div class="container">
-    <p class="section-label">Resultados reais</p>
-    <h2 class="section-title">Quem já viveu a experiência</h2>
-    <div class="reels-grid">
-      <div class="reel-card" id="reel1" onclick="playReel('reel1','rvid1')">
-        <img src="reel1.jpg" alt="Resultado Crown'us" />
-        <video id="rvid1" loading="lazy" src="reel1.mp4" loop playsinline></video>
-        <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
-      </div>
-      <div class="reel-card" id="reel2" onclick="playReel('reel2','rvid2')">
-        <img src="reel2.jpg" alt="Resultado Crown'us" />
-        <video id="rvid2" loading="lazy" src="reel2.mp4" loop playsinline></video>
-        <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
-      </div>
-      <div class="reel-card" id="reel3" onclick="playReel('reel3','rvid3')">
-        <img src="reel3.jpg" alt="Resultado Crown'us" />
-        <video id="rvid3" loading="lazy" src="reel3.mp4" loop playsinline></video>
-        <div class="reel-overlay"><div class="reel-play"><svg width="16" height="18" viewBox="0 0 16 18" fill="white"><path d="M1 1l14 8L1 17V1z"/></svg></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PREÇO — destaque claro -->
-<section class="preco" id="preco">
-  <div class="container">
-    <div class="preco-inner">
-      <div class="preco-texto">
-        <p class="section-label">O que está incluído</p>
-        <h2 class="section-title">R$ 199 é<br />tudo isso junto.</h2>
-        <div class="divider-gold"></div>
-        <p class="section-desc">Não é só uma hidratação. Você sai do salão com o tratamento feito e com o produto na bolsa pra usar por meses. Isso é o que a experiência DSC entrega.</p>
-        <p class="section-desc" style="margin-top:14px;">Uma hidratação <span class="crownus-red">Crown'us</span> no salão custa em média R$ 250 — sem produto pra levar. Aqui você paga R$ 199 e ainda leva cerca de 30 aplicações em casa.</p>
-      </div>
-      <div class="preco-box">
-        <div class="preco-tag">Experiência <span class="crownus-red">Crown'us</span> · DSC</div>
-        <div class="preco-principal">R$ 199,00</div>
-        <div class="preco-parcelado">ou 3× de R$ 79,00 no cartão</div>
-        <ul class="preco-items">
-          <li>Tratamento Hair Booster no salão com profissional certificado</li>
-          <li>Kit Hair Booster pra levar pra casa (cerca de 30 aplicações)</li>
-          <li>Vitamina E · Óleo de Avelã · Amêndoas — fórmula profissional</li>
-          <li>3 minutos no banho — simples de usar todos os dias</li>
-          <li>Suporte da Bruna pelo WhatsApp durante o uso</li>
-        </ul>
-        <div class="preco-highlight">
-          <p>Funciona para <strong>todos os tipos de cabelo</strong> — liso, ondulado, cacheado, crespo, colorido, descolorido ou com química.</p>
-        </div>
-        <a href="#reservar" class="btn-gold" style="width:100%;justify-content:center;display:flex;">
-          Quero reservar minha vaga
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span class="arrow">›</span>
         </a>
-        <p class="preco-date">Em breve novos eventos · Vagas limitadas</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SOBRE -->
-<section class="sobre" id="sobre">
-  <div class="container">
-    <div class="sobre-inner">
-      <div>
-        <img src="Bruna.PNG" alt="Bruna Mocarzel — Fitra Hub Salões" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;" />
-      </div>
-      <div class="sobre-content">
-        <p class="section-label">Quem está por trás da Fitra Hub</p>
-        <h2 class="section-title">Conheça a Bruna</h2>
-        <div class="divider-gold"></div>
-        <p class="sobre-text">Bruna está à frente da Fitra Hub Salões, uma marca criada para ir muito além da revenda de produtos para salão.</p>
-        <p class="sobre-text">Com propósito claro, a Fitra Hub leva ao mercado inovação, tecnologia, produtividade, marketing e, acima de tudo, apoio real ao salão de beleza. A proposta é ajudar o parceiro a transformar produto em experiência, atendimento em valor percebido e relacionamento em crescimento.</p>
-        <p class="sobre-text">Mais do que vender, Bruna permanece na ponta, acompanhando de perto a operação, para ter certeza de que o consumidor final está satisfeito e de que o salão está conseguindo vender, gerar recorrência e construir resultado.</p>
-        <p class="sobre-text">A Fitra Hub acredita que crescimento de verdade acontece quando existe presença, estratégia e suporte. Por isso, Bruna atua de forma próxima, conectando marcas, salões e oportunidades com uma visão prática de negócio.</p>
-        <blockquote class="sobre-quote">"Fitra Hub Salões — Mais do que produtos, uma estrutura de apoio para salões crescerem com inovação e resultado."</blockquote>
-      </div>
-    </div>
-  </div>
-</section>
+        <a class="link-card primary"
+           href="https://calendly.com/bmocarzel/inside-beauty-call"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'calendly'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          <div class="body">
+            <span class="label">Agendar call de 15 min</span>
+            <span class="sub">Segundas, 14h às 18h — Calendly</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="container">
-    <p class="section-label">Dúvidas</p>
-    <h2 class="section-title">Perguntas antes de decidir</h2>
-    <div class="divider-gold"></div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Quanto rende o frasco que vou levar pra casa?
-          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
-        </button>
-        <div class="faq-answer">O frasco da Hair Booster tem 60ml e rende em média 30 aplicações — dependendo do comprimento e volume do cabelo. São cerca de 30 dias de uso diário ou até mais se você usar em dias alternados.</div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Como eu uso o Hair Booster em casa?
-          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
-        </button>
-        <div class="faq-answer">É simples: depois de lavar o cabelo com shampoo, borrife a Hair Booster nos fios limpos e úmidos, mecha a mecha. Deixe agir por no mínimo 3 minutos. Enxágue. Finalize como preferir. Pode ser usado todos os dias.</div>
+    </section>
+
+    <!-- EVENTO -->
+    <section class="section">
+      <p class="section-label">Imersão</p>
+      <h2 class="section-title">The Inside Beauty</h2>
+      <div class="divider-gold"></div>
+
+      <div class="event-badge">
+        <span class="ev-tag">Crown'us Professional · 15 jun 2026</span>
+        <span class="ev-title">Loiros, morenos e visagismo premium</span>
+        <span class="ev-meta">Pelle Capelli · Santo André · 100% volta em produto</span>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Funciona para cabelo colorido ou com química?
-          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
-        </button>
-        <div class="faq-answer">Sim. A Hair Booster é indicada para todos os tipos de cabelo — lisos, ondulados, cacheados e crespos, naturais ou com procedimentos químicos como coloração, descoloração ou progressiva.
+
+      <div class="card-list">
+
+        <a class="link-card gold"
+           href="https://www.sympla.com.br/evento/the-inside-beauty--loiros-morenos-e-visagismo-premium/3406633"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'sympla'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg></span>
+          <div class="body">
+            <span class="label">Garantir vaga (Sympla)</span>
+            <span class="sub">Lote Fundadoras R$250 · até 15/05</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card whatsapp"
+           href="https://chat.whatsapp.com/Fa7vQLRNjEkIb2l1mNdY8M?mode=gi_t"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'grupo_whatsapp'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <div class="body">
+            <span class="label">Entrar no grupo do evento</span>
+            <span class="sub">Avisos, conteúdo e bastidores</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://fitrahubsaloes.com.br/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'site_evento'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <div class="body">
+            <span class="label">Site do evento</span>
+            <span class="sub">fitrahubsaloes.com.br</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://fitrahubsaloes.com.br/crownus/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'pagina_crownus'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+          <div class="body">
+            <span class="label">Conhecer a Crown'us</span>
+            <span class="sub">Linhas, retorno do kit, depoimentos</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://fitrahubsaloes.com.br/felipe-ventura/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'curso_felipe'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 12 18 8 18 11 9 11 9 13 18 13 18 16 22 12"/><path d="M14 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10"/></svg></span>
+          <div class="body">
+            <span class="label">Curso Felipe Ventura</span>
+            <span class="sub">CW Partner Crown'us · Studio Color</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CROWN'US -->
+    <section class="section">
+      <p class="section-label">A marca</p>
+      <h2 class="section-title">Crown'us Professional</h2>
+      <div class="divider-gold"></div>
+      <div class="card-list">
+
+        <a class="link-card"
+           href="https://crownus.com.br/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'crownus_oficial'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+          <div class="body">
+            <span class="label">Site oficial Crown'us</span>
+            <span class="sub">Linha profissional · crownus.com.br</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://lojacrownus.com.br/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'loja_crownus'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
+          <div class="body">
+            <span class="label">Loja Crown'us — Home Care</span>
+            <span class="sub">lojacrownus.com.br</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://www.instagram.com/crownuspro/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'ig_crownuspro'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+          <div class="body">
+            <span class="label">@crownuspro</span>
+            <span class="sub">Conteúdo técnico · profissionais</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://www.instagram.com/crownus_professional/"
+           target="_blank" rel="noopener"
+           onclick="gtag('event','click_link',{'destination':'ig_crownus_professional'});">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+          <div class="body">
+            <span class="label">@crownus_professional</span>
+            <span class="sub">Canal · consumidor final</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+      </div>
+    </section>
+
+    <footer>
+      <p class="foot-text">
+        Do Salão Pra Sua Casa<br>
+        Distribuidor parceiro · Elux Pro
+      </p>
+    </footer>
+
+  </div>
+</main>
+</body>
+</html>

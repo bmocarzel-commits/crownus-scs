@@ -1,483 +1,419 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex, nofollow" />
-<title>Bruna Mocarzel — Consultora Crown'us | Do Salão Para Casa</title>
-<meta name="description" content="Cartão digital da Bruna — consultora Crown'us no ABC Paulista. Salve o contato, garanta vaga na imersão The Inside Beauty 15/06/2026 e agende sua demonstração." />
-<link rel="canonical" href="https://dosalaoparasuacasa.com.br/bruna/" />
-<link rel="icon" href="../favicon.png" type="image/png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E0907E">
+    <title>Bruna Mocarzel — Fitra Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<meta property="og:type" content="profile" />
-<meta property="og:url" content="https://dosalaoparasuacasa.com.br/bruna/" />
-<meta property="og:title" content="Bruna Mocarzel — Consultora Crown'us" />
-<meta property="og:description" content="Consultora Crown'us no ABC Paulista. Imersão The Inside Beauty 15/06/2026." />
-<meta property="og:image" content="https://dosalaoparasuacasa.com.br/bruna/bruna-avatar.png" />
-<meta property="og:locale" content="pt_BR" />
+        :root {
+            --rosa: #E0907E;
+            --bege: #FBF7F3;
+            --bege-escuro: #F5EFEA;
+            --preto: #1A1A1A;
+            --cinza: #D4CECA;
+            --branco: #FFFFFF;
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Jura:wght@300;400;500&display=swap" rel="stylesheet" />
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bege);
+            color: var(--preto);
+            line-height: 1.6;
+        }
 
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--bege);
+            min-height: 100vh;
+        }
 
-  :root {
-    --ink:       #0A0A0A;
-    --paper:     #F6F2EA;
-    --paper-mid: #EDE8DF;
-    --paper-drk: #DDD8CE;
-    --gold:      #C4A870;
-    --gold-dark: #9E8348;
-    --red:       #C41E2F;
-    --red-dark:  #a31827;
-    --ash:       #8C8882;
-    --text:      #3A3830;
-    --text-mid:  #6A6560;
-    --white:     #FFFFFF;
-    --whatsapp:  #25d366;
+        /* HEADER */
+        .header {
+            background: white;
+            padding: 24px 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--cinza);
+        }
 
-    --serif: 'Cormorant Garamond', Georgia, serif;
-    --sans:  'Instrument Sans', system-ui, sans-serif;
-    --mono:  'Jura', system-ui, sans-serif;
-  }
+        .header-logo {
+            font-size: 10px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
 
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: var(--sans);
-    color: var(--text);
-    background: var(--paper);
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-  a { text-decoration: none; color: inherit; }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 2px;
+        }
 
-  /* ═══ NAV (mesma do site) ════════════════════════════ */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(10,10,10,0.97);
-    backdrop-filter: blur(8px);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 36px; height: 64px;
-    border-bottom: 1px solid rgba(196,168,112,0.15);
-  }
-  .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .nav-dsc-name {
-    font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
-    letter-spacing: 0.16em; text-transform: uppercase; color: #F6F2EA; line-height: 1;
-  }
-  .nav-dsc-name span {
-    display: block; font-family: var(--serif); font-style: italic;
-    font-weight: 400; font-size: 0.66rem; letter-spacing: 0.06em;
-    text-transform: none; color: var(--gold); margin-top: 2px;
-  }
-  .nav-right { display: flex; align-items: center; gap: 20px; }
-  .nav-tag {
-    font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em;
-    text-transform: uppercase; color: rgba(255,255,255,0.45);
-  }
-  .nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); }
-  @media (max-width: 680px) { nav { padding: 0 20px; } .nav-right { display: none; } }
+        .header h1 strong {
+            font-weight: 600;
+            font-style: italic;
+        }
 
-  /* ═══ HERO compacto ══════════════════════════════════ */
-  main { padding-top: 64px; }
-  .wrap { max-width: 520px; margin: 0 auto; padding: 32px 24px 64px; }
+        .header p {
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 12px;
+        }
 
-  .hero { text-align: center; padding: 24px 0 8px; }
-  .avatar {
-    width: 132px; height: 132px; border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--paper);
-    outline: 1px solid rgba(196,168,112,0.4);
-    outline-offset: 4px;
-    box-shadow: 0 8px 24px rgba(10,10,10,0.10);
-    margin-bottom: 22px;
-  }
-  .kicker {
-    display: inline-flex; align-items: center; gap: 10px;
-    margin-bottom: 14px;
-  }
-  .kicker-line { width: 24px; height: 1px; background: var(--gold); }
-  .kicker-text {
-    font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--gold-dark);
-  }
-  .hero h1 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(2.4rem, 7vw, 3rem);
-    line-height: 1.05;
-    color: var(--ink);
-    margin-bottom: 8px;
-    letter-spacing: -0.005em;
-  }
-  .hero h1 em { font-style: italic; color: var(--gold-dark); }
-  .role {
-    font-family: var(--sans);
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--text-mid);
-    margin-bottom: 18px;
-  }
-  .tag-pill {
-    display: inline-flex; align-items: center; gap: 0;
-    background: var(--gold);
-    overflow: hidden;
-    margin-bottom: 4px;
-  }
-  .tag-pill-item {
-    padding: 7px 14px;
-    font-family: var(--mono); font-size: 0.7rem; font-weight: 500;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink);
-    border-right: 1px solid rgba(10,10,10,0.15);
-  }
-  .tag-pill-item:last-child { border-right: none; }
+        .header-buttons {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
 
-  /* ═══ CTA primário (vCard) ═══════════════════════════ */
-  .save-contact {
-    display: flex; align-items: center; justify-content: center; gap: 12px;
-    width: 100%; margin: 28px 0 12px;
-    padding: 18px 24px;
-    background: var(--ink); color: var(--paper);
-    font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    border: none; cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .save-contact:hover, .save-contact:active {
-    background: var(--gold); color: var(--ink); transform: translateY(-1px);
-  }
-  .save-contact svg { width: 18px; height: 18px; }
+        .header-btn {
+            background: var(--rosa);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-  /* ═══ Seção ══════════════════════════════════════════ */
-  .section { margin-top: 36px; }
-  .section-label {
-    font-family: var(--mono); font-size: 0.66rem; font-weight: 500;
-    letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--gold-dark); margin-bottom: 8px;
-  }
-  .section-title {
-    font-family: var(--serif);
-    font-size: 1.5rem; font-weight: 500;
-    color: var(--ink); line-height: 1.15;
-  }
-  .divider-gold { width: 36px; height: 1px; background: var(--gold); margin: 12px 0 22px; }
+        .header-btn:hover {
+            background: #D97B6E;
+        }
 
-  /* ═══ Cards de link ══════════════════════════════════ */
-  .card-list { display: flex; flex-direction: column; gap: 10px; }
-  .link-card {
-    display: flex; align-items: center; gap: 14px;
-    padding: 18px 18px;
-    background: var(--paper-mid);
-    border: 1px solid var(--paper-drk);
-    transition: border-color 0.2s, transform 0.15s, background 0.2s;
-  }
-  .link-card:hover, .link-card:active {
-    border-color: var(--gold);
-    background: var(--white);
-    transform: translateY(-1px);
-  }
-  .link-card .icon {
-    width: 40px; height: 40px; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    background: var(--paper);
-    border: 1px solid var(--paper-drk);
-    color: var(--ink);
-  }
-  .link-card .icon svg { width: 18px; height: 18px; }
-  .link-card.primary .icon { background: var(--ink); color: var(--gold); border-color: var(--ink); }
-  .link-card.gold .icon { background: var(--gold); color: var(--ink); border-color: var(--gold); }
-  .link-card.whatsapp .icon { background: var(--whatsapp); color: var(--white); border-color: var(--whatsapp); }
-  .link-card .body { flex: 1; min-width: 0; }
-  .link-card .label {
-    font-family: var(--serif); font-size: 1.15rem; font-weight: 500;
-    color: var(--ink); display: block; line-height: 1.2;
-    margin-bottom: 2px;
-  }
-  .link-card .sub {
-    font-family: var(--sans); font-size: 0.82rem; font-weight: 300;
-    color: var(--text-mid);
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .link-card .arrow {
-    font-family: var(--mono); color: var(--gold-dark);
-    font-size: 1.1rem; flex-shrink: 0; letter-spacing: 0;
-  }
+        .main-cta {
+            background: var(--preto);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
 
-  /* ═══ Badge do evento ════════════════════════════════ */
-  .event-badge {
-    background: var(--ink);
-    border: 1px solid rgba(196,168,112,0.3);
-    color: var(--paper);
-    padding: 22px 22px;
-    margin-bottom: 12px;
-    text-align: left;
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .event-badge .ev-tag {
-    font-family: var(--mono); font-size: 0.62rem; font-weight: 500;
-    letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--gold);
-  }
-  .event-badge .ev-title {
-    font-family: var(--serif); font-size: 1.6rem; font-weight: 400;
-    color: var(--paper); line-height: 1.1;
-  }
-  .event-badge .ev-meta {
-    font-family: var(--sans); font-size: 0.85rem; font-weight: 300;
-    color: rgba(246,242,234,0.6);
-    margin-top: 4px;
-  }
+        .main-cta:hover {
+            background: #333;
+        }
 
-  /* ═══ Footer ═════════════════════════════════════════ */
-  footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid var(--paper-drk);
-    text-align: center;
-  }
-  .foot-text {
-    font-family: var(--mono); font-size: 0.62rem;
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--ash); line-height: 1.8;
-  }
-  .foot-text a { color: var(--gold-dark); border-bottom: 1px dotted var(--paper-drk); }
-</style>
+        /* SECTIONS */
+        .section {
+            margin-top: 16px;
+        }
 
-<!-- GA4 (mesma propriedade do site do evento) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-23TMB6G2QW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-23TMB6G2QW');
-</script>
+        .section-label {
+            font-size: 10px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 12px 16px 6px;
+        }
+
+        .section-title {
+            background: var(--preto);
+            color: white;
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--cinza);
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+        }
+
+        .card:hover {
+            background: var(--bege-escuro);
+        }
+
+        .card-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--bege-escuro);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .card.green .card-icon {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .card.black .card-icon {
+            background: var(--preto);
+            color: white;
+        }
+
+        .card.gold .card-icon {
+            background: var(--rosa);
+            color: white;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .card-desc {
+            font-size: 11px;
+            color: #999;
+        }
+
+        .section-cards {
+            background: white;
+            border: 1px solid var(--cinza);
+            border-top: none;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: white;
+            padding: 16px;
+            text-align: center;
+            color: #999;
+            font-size: 10px;
+            border-top: 1px solid var(--cinza);
+            margin-top: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-name {
+            font-weight: 600;
+            color: var(--rosa);
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            width: 100%;
+            max-width: 540px;
+            max-height: 80vh;
+            position: relative;
+        }
+
+        .modal-video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 8px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: white;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            background: var(--rosa);
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 12px 12px;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-logo">© Bruna Mocarzel</div>
+            <h1>Bruna <strong>Mocarzel</strong></h1>
+            <p>Fitra Hub para Salões — ABC Paulista</p>
+            <div class="header-buttons">
+                <a href="#" class="header-btn">CONSULTORIA</a>
+                <a href="#" class="header-btn">DEMO</a>
+            </div>
+            <a href="https://wa.me/5511911631703?text=Olá%20Bruna%21%20Recebi%20seu%20Chip%20Fitra%20Hub.%20Quero%20saber%20mais%20sobre%20Crown%27us%20e%20como%20funciona%20a%20Demonstração%20dos%20Produtos." class="main-cta">
+                📱 FALAR COM BRUNA
+            </a>
+        </div>
 
-<!-- NAV (idêntica ao site) -->
-<nav>
-  <a href="../" class="nav-brand">
-    <svg width="34" height="20" viewBox="0 0 56 32" fill="none">
-      <path d="M8 16 A20 20 0 0 1 48 16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-      <line x1="4" y1="16" x2="52" y2="16" stroke="#C4A870" stroke-width="2.8" stroke-linecap="round"/>
-      <circle cx="4" cy="16" r="3" fill="#C4A870"/>
-      <circle cx="52" cy="16" r="3" fill="#C4A870"/>
-    </svg>
-    <div class="nav-dsc-name">
-      Do Salão Pra Sua Casa
-      <span>plataforma de experiência</span>
+        <!-- SEÇÃO 1: FALA COMIGO -->
+        <div class="section">
+            <div class="section-label">Fala Comigo</div>
+            <div class="section-cards">
+                <a href="https://wa.me/5511911631703?text=Olá%20Bruna%21%20Recebi%20seu%20Chip%20Fitra%20Hub.%20Quero%20saber%20mais%20sobre%20Crown%27us%20e%20como%20funciona%20a%20Demonstração%20dos%20Produtos." class="card green">
+                    <div class="card-icon">💬</div>
+                    <div class="card-content">
+                        <div class="card-title">WhatsApp Bruna</div>
+                        <div class="card-desc">Conversa direta, sem pressa</div>
+                    </div>
+                </a>
+                <a href="https://chat.whatsapp.com/Fa7vQLRNjEkIb2l1mNdY8M" class="card black">
+                    <div class="card-icon">📢</div>
+                    <div class="card-content">
+                        <div class="card-title">Receba atualizações do Evento</div>
+                        <div class="card-desc">Participe dessa nova Comunidade</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 2: DETALHES DO EVENTO -->
+        <div class="section">
+            <div class="section-title">Confira todos os detalhes do evento</div>
+            <div class="section-cards">
+                <a href="https://fitrahubsaloes.com.br/" class="card gold">
+                    <div class="card-icon">✨</div>
+                    <div class="card-content">
+                        <div class="card-title">The Inside Beauty</div>
+                        <div class="card-desc">15 de junho no Pelle Capelli — Santo André</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 3: BASTIDORES -->
+        <div class="section">
+            <div class="section-label">Confira os bastidores do Evento passado</div>
+            <div class="section-cards">
+                <a href="javascript:openVideoModal()" class="card">
+                    <div class="card-icon">🎬</div>
+                    <div class="card-content">
+                        <div class="card-title">Casa Florah</div>
+                        <div class="card-desc">Veja transformações reais e bastidor do evento anterior</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 4: INSTAGRAM -->
+        <div class="section">
+            <div class="section-label">Acompanhe nas redes</div>
+            <div class="section-cards">
+                <a href="https://instagram.com/bruna.eluxpro" class="card">
+                    <div class="card-icon">📷</div>
+                    <div class="card-content">
+                        <div class="card-title">@bruna.eluxpro</div>
+                        <div class="card-desc">Acompanhe Bruna no Instagram</div>
+                    </div>
+                </a>
+                <a href="https://instagram.com/elux_pro" class="card">
+                    <div class="card-icon">📷</div>
+                    <div class="card-content">
+                        <div class="card-title">@elux_pro</div>
+                        <div class="card-desc">Acompanhe Elux Pro no Instagram</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><span class="footer-name">Bruna Mocarzel</span></p>
+            <p>Fitra Hub para Salões | Elux Pro</p>
+            <p>ABC Paulista • São Paulo • Brasil</p>
+        </div>
     </div>
-  </a>
-  <div class="nav-right">
-    <span class="nav-tag">Cartão da consultora</span>
-  </div>
-</nav>
 
-<main>
-  <div class="wrap">
+    <!-- MODAL VIDEO -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">✕</button>
+            <video class="modal-video" controls>
+                <source src="casa-florah-reels.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+    </div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <img src="bruna-avatar.png" alt="Bruna Mocarzel" class="avatar" loading="eager" />
-      <div class="kicker">
-        <span class="kicker-line"></span>
-        <span class="kicker-text">Consultora Crown'us</span>
-        <span class="kicker-line"></span>
-      </div>
-      <h1>Bruna <em>Mocarzel</em></h1>
-      <p class="role">Fitra Hub Salões — ABC Paulista</p>
-      <div class="tag-pill">
-        <span class="tag-pill-item">Treinamento</span>
-        <span class="tag-pill-item">Consultoria</span>
-        <span class="tag-pill-item">Demos</span>
-      </div>
+    <script>
+        function openVideoModal() {
+            document.getElementById('videoModal').classList.add('show');
+        }
 
-      <a href="bruna.vcf" class="save-contact" download="Bruna-Mocarzel.vcf"
-         onclick="gtag('event','save_contact',{'method':'vcard'});">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-        Salvar meu contato
-      </a>
-    </section>
+        function closeVideoModal() {
+            document.getElementById('videoModal').classList.remove('show');
+        }
 
-    <!-- CONVERSAR AGORA -->
-    <section class="section">
-      <p class="section-label">Conversar agora</p>
-      <h2 class="section-title">Fala comigo</h2>
-      <div class="divider-gold"></div>
-      <div class="card-list">
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
 
-        <a class="link-card whatsapp"
-           href="https://wa.me/5511982365924?text=Oi%20Bruna%2C%20te%20conheci%20no%20porta-em-porta%20da%20Crown%27us%20e%20quero%20saber%20mais"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'whatsapp_bruna'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.307 1.265.49 1.697.628.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg></span>
-          <div class="body">
-            <span class="label">WhatsApp Bruna</span>
-            <span class="sub">+55 (11) 98236-5924</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card primary"
-           href="https://calendly.com/bmocarzel/inside-beauty-call"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'calendly'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
-          <div class="body">
-            <span class="label">Agendar call de 15 min</span>
-            <span class="sub">Segundas, 14h às 18h — Calendly</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- EVENTO -->
-    <section class="section">
-      <p class="section-label">Imersão</p>
-      <h2 class="section-title">The Inside Beauty</h2>
-      <div class="divider-gold"></div>
-
-      <div class="event-badge">
-        <span class="ev-tag">Crown'us Professional · 15 jun 2026</span>
-        <span class="ev-title">Loiros, morenos e visagismo premium</span>
-        <span class="ev-meta">Pelle Capelli · Santo André · 100% volta em produto</span>
-      </div>
-
-      <div class="card-list">
-
-        <a class="link-card gold"
-           href="https://www.sympla.com.br/evento/the-inside-beauty--loiros-morenos-e-visagismo-premium/3406633"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'sympla'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg></span>
-          <div class="body">
-            <span class="label">Garantir vaga (Sympla)</span>
-            <span class="sub">Lote Fundadoras R$250 · até 15/05</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card whatsapp"
-           href="https://chat.whatsapp.com/Fa7vQLRNjEkIb2l1mNdY8M?mode=gi_t"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'grupo_whatsapp'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-          <div class="body">
-            <span class="label">Entrar no grupo do evento</span>
-            <span class="sub">Avisos, conteúdo e bastidores</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://fitrahubsaloes.com.br/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'site_evento'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
-          <div class="body">
-            <span class="label">Site do evento</span>
-            <span class="sub">fitrahubsaloes.com.br</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://fitrahubsaloes.com.br/crownus/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'pagina_crownus'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
-          <div class="body">
-            <span class="label">Conhecer a Crown'us</span>
-            <span class="sub">Linhas, retorno do kit, depoimentos</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://fitrahubsaloes.com.br/felipe-ventura/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'curso_felipe'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 12 18 8 18 11 9 11 9 13 18 13 18 16 22 12"/><path d="M14 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10"/></svg></span>
-          <div class="body">
-            <span class="label">Curso Felipe Ventura</span>
-            <span class="sub">CW Partner Crown'us · Studio Color</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- CROWN'US -->
-    <section class="section">
-      <p class="section-label">A marca</p>
-      <h2 class="section-title">Crown'us Professional</h2>
-      <div class="divider-gold"></div>
-      <div class="card-list">
-
-        <a class="link-card"
-           href="https://crownus.com.br/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'crownus_oficial'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
-          <div class="body">
-            <span class="label">Site oficial Crown'us</span>
-            <span class="sub">Linha profissional · crownus.com.br</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://lojacrownus.com.br/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'loja_crownus'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
-          <div class="body">
-            <span class="label">Loja Crown'us — Home Care</span>
-            <span class="sub">lojacrownus.com.br</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://www.instagram.com/crownuspro/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'ig_crownuspro'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
-          <div class="body">
-            <span class="label">@crownuspro</span>
-            <span class="sub">Conteúdo técnico · profissionais</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a class="link-card"
-           href="https://www.instagram.com/crownus_professional/"
-           target="_blank" rel="noopener"
-           onclick="gtag('event','click_link',{'destination':'ig_crownus_professional'});">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
-          <div class="body">
-            <span class="label">@crownus_professional</span>
-            <span class="sub">Canal · consumidor final</span>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-      </div>
-    </section>
-
-    <footer>
-      <p class="foot-text">
-        Do Salão Pra Sua Casa<br>
-        Distribuidor parceiro · Elux Pro
-      </p>
-    </footer>
-
-  </div>
-</main>
+        document.querySelectorAll('.card, .main-cta').forEach(el => {
+            el.addEventListener('click', () => {
+                if (navigator.vibrate) navigator.vibrate(80);
+            });
+        });
+    </script>
 </body>
 </html>
